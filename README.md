@@ -7,7 +7,7 @@ of about 30W per cubic inch. This allows the development of a power adapter that
 than the 2018 Apple Powerbook wall power adapter.
 
 <p align="center">
-  <img src="https://github.com/fabriziotappero/flyback-conv/blob/master/pdf/TIDA-01622.png?raw=true" alt=""/>
+  <img src="https://github.com/fabriziotappero/flyback-conv/blob/master/PDF/TIDA-01622.png?raw=true" alt=""/>
 </p>
 
 In this repository you can find an open-source KiCad implementation of a very similar 70W Flyback converter.	
@@ -19,7 +19,7 @@ In this repository you can find an open-source KiCad implementation of a very si
 ## Electronic Schematic
 ![][flyback_conv_sch]
 
-[flyback_conv_sch]: https://github.com/fabriziotappero/flyback_conv/blob/master/PDF/flyback_conv_sch.png ""
+[flyback_conv_sch]: https://github.com/fabriziotappero/flyback-conv/blob/master/PDF/flyback_conv_sch.png ""
 
 ## Printed Circuit Board
 This is the 2 layer PCB designed.
