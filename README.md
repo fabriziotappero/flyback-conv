@@ -1,8 +1,8 @@
 
-In 2018 Navitas Semiconductors came up with a very fast GaN Mosfet that enables the design of Laptop power
-adapters and USB chargers with a power density of 20-30W/in3.
+In 2018 Navitas Semiconductor came up with a very fast GaN Mosfet that enables the design of laptop power
+adapters and USB chargers with a power density of 20W/in3 or better.
 
-In the same year, Texas Instruments came up with the design of a 70W AC/DC Flyback converter that has a power density
+In the same year, Texas Instruments came up with the design of a 70W AC/DC Flyback converter with a power density
 of about 30W per cubic inch. This allows the development of a power adapter that is 4 times smaller 
 than the 2018 Apple Powerbook wall power adapter.
 
@@ -32,7 +32,7 @@ This is the 2 layer PCB designed.
 
 [KiCad EDA Tool]: (http://kicad-pcb.org/)
 [APEC 2017 Active Clamp Flyback Converter]: (https://www.navitassemi.com/wp-content/uploads/2015/03/APEC-2017-Active-Clamp-Flyback-3-29-17.pdf)
-[Navitas Semiconductors - White papers]: (https://www.navitassemi.com/white-papers-articles/)
+[Navitas Semiconductor - White papers]: (https://www.navitassemi.com/white-papers-articles/)
 
 ## More Information
 For any enquiry contact:
