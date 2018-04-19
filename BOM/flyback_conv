@@ -1,0 +1,5 @@
+Flyback Converter
+Tue 17 Apr 2018 11:13:26 CEST
+Reference,Quantity,Value,Description,Footprint,Datasheet,Manufacturer,MPN,Mouser,Farnell,Digikey,Alternative,Feed
+"R1;R3","2","20k","RES SMD 20k 1% 0603","","none","none","none","none","none","none","-","none"
+"R2","1","20k","RES SMD 20k 1% 0603","","none","manufacturer","mpn number","mou","f","d","-","none"
