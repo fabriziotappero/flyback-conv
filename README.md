@@ -1,8 +1,8 @@
 
-In 2018 Navitas Semiconductor came up with a very fast GaN Mosfet that enables the design of laptop power
-adapters and USB chargers with a power density of 20W/in3 or better.
+In 2018 Navitas Semiconductor announced what it calls the world’s smallest, fastest-charging mobile adapter enabled 
+by GaNFast power ICs delivering 5x greater power than standard smartphone chargers and has 2x higher power density.
 
-In the same year, Texas Instruments came up with the design of a 70W AC/DC Flyback converter with a power density
+In the same year, Texas Instruments presented the design of a 70W AC/DC Flyback converter with a power density
 of about 30W per cubic inch. This allows the development of a power adapter that is 4 times smaller 
 than the 2018 Apple Powerbook wall power adapter.
 
@@ -27,6 +27,16 @@ This is the 2 layer PCB designed.
 ![][flyback_conv_pcb]
 
 [flyback_conv_pcb]: https://github.com/fabriziotappero/flyback-conv/blob/master/PCB/flyback_conv_pcb.png ""
+
+## GaN MOSFET Devices
+All major developments into high-desity AC/DC flyback converters are dne around fancy GaN Mosfets that are 
+not so readly available. For instance, the Texas Intruments TIDA-01622 schematic is built around the Navitas 
+Semiconductor NV6117 and the NV6115. Both very hard to find.
+
+At the time of writing (04/2018) the only GaN Mosfet available to me is the Panasonic PGA26E07BA or the cheaper PGA26E19BA.
+Both GaN FET would probably require a driver, the Panasonic AN34092B.
+
+The datasheet of all mentioned components are available in the /PDF folder.
 
 ## References
 
