@@ -1,0 +1,4178 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title "AC/DC Flyback Converter"
+Date "2018-05-23"
+Rev "v0.6"
+Comp "Copyright Fabrizio Tappero"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO1
+U 1 1 5B05757C
+P 22450 15100
+F 0 "#LOGO1" H 22450 15375 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 22450 14875 50  0001 C CNN
+F 2 "" H 22450 15100 50  0001 C CNN
+F 3 "~" H 22450 15100 50  0001 C CNN
+F 4 "none" H 22450 15100 50  0001 C CNN "Description"
+F 5 "none" H 22450 15100 50  0001 C CNN "mpn"
+F 6 "none" H 22450 15100 50  0001 C CNN "Mouser"
+F 7 "none" H 22450 15100 50  0001 C CNN "Farnell"
+F 8 "none" H 22450 15100 50  0001 C CNN "Digikey"
+F 9 "none" H 22450 15100 50  0001 C CNN "Alternative"
+F 10 "-" H 22450 15100 50  0001 C CNN "Feed"
+F 11 "none" H 22450 15100 50  0001 C CNN "Logo - not a component"
+	1    22450 15100
+	1    0    0    -1  
+$EndComp
+Text Notes 21950 15400 0    47   ~ 9
+OPEN SOURCE HARDWARE
+$Comp
+L Device:Fuse F1
+U 1 1 5AE63A13
+P 9200 2450
+F 0 "F1" V 9100 2350 50  0000 C CNN
+F 1 "Fuse" V 9100 2600 50  0000 C CNN
+F 2 "Fuse:Fuse_Littlefuse_395Series" V 9130 2450 50  0001 C CNN
+F 3 "http://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_392_datasheet.pdf.pdf" H 9200 2450 50  0001 C CNN
+F 4 "39213150000" V 9200 2450 50  0001 C CNN "MPN"
+F 5 "576-3921315000" V 9200 2450 50  0001 C CNN "Mouser"
+F 6 "Fuses with Leads (Through Hole) 250V IEC TL LL 3.15A TE5" V 9200 2450 50  0001 C CNN "Description"
+F 7 "Littelfuse" V 9200 2450 50  0001 C CNN "Manufacturer"
+F 8 "RST 3.15-BULK" H 5150 1200 50  0001 C CNN "Alternative"
+F 9 "F5504TB-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 10 "1757614" H 5150 1200 50  0001 C CNN "Farnell"
+F 11 "none" H 5150 1200 50  0001 C CNN "Feed"
+	1    9200 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L custom-lib:EMI_FILTER FL1
+U 1 1 5AE6CC82
+P 9500 2450
+F 0 "FL1" H 9600 2550 50  0000 C CNN
+F 1 "20mH" H 9900 2550 50  0000 C CNN
+F 2 "Inductor_THT:L_CommonMode_Wuerth_WE-CMB-S" H 9750 2500 50  0001 C CNN
+F 3 "http://katalog.we-online.de/pbs/datasheet/744822120.pdf" H 9850 2600 50  0001 C CNN
+F 4 "Common Mode Chokes/Filters WE-CMB Choke Type S 20mH 0.5A 540mOhm" H 9500 2450 50  0001 C CNN "Description"
+F 5 "Wurth Electronics" H 9500 2450 50  0001 C CNN "Manufacturer"
+F 6 "744822120" H 9500 2450 50  0001 C CNN "MPN"
+F 7 "710-744822120" H 9500 2450 50  0001 C CNN "Mouser"
+F 8 "1636287" H 5150 1200 50  0001 C CNN "Farnell"
+F 9 "732-1443-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 10 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 11 "none" H 5150 1200 50  0001 C CNN "Feed"
+	1    9500 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2450 9500 2450
+$Comp
+L Device:D_Bridge_+AA- D9
+U 1 1 5AE6D2E0
+P 10800 2450
+F 0 "D9" V 10950 2700 50  0000 R CNN
+F 1 "KBP06G" V 10950 2300 50  0000 R CNN
+F 2 "custom-footprint:VISHAY_2KBP" H 10800 2450 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/93562/vs-2kbpseries.pdf" H 10800 2450 50  0001 C CNN
+F 4 "Vishay Semiconductors" V 10800 2450 50  0001 C CNN "Manufacturer"
+F 5 "844-2KBP06" V 10800 2450 50  0001 C CNN "Mouser"
+F 6 "VS-2KBP06" V 10800 2450 50  0001 C CNN "MPN"
+F 7 "Bridge Rectifier Single Phase Standard 600V Through Hole KBPL" V 10800 2450 50  0001 C CNN "Description"
+F 8 "2KBP06-BP" H 5150 1200 50  0001 C CNN "Alternative"
+F 9 "VS-2KBP06GI-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 10 "9098739" H 5150 1200 50  0001 C CNN "Farnell"
+F 11 "none" H 5150 1200 50  0001 C CNN "Feed"
+	1    10800 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9900 2650 10050 2650
+Wire Wire Line
+	10050 2650 10050 2800
+Wire Wire Line
+	10050 2800 11150 2800
+Wire Wire Line
+	11150 2800 11150 2450
+Wire Wire Line
+	11150 2450 11100 2450
+$Comp
+L power:Earth #PWR0101
+U 1 1 5AE6D5B0
+P 10800 2900
+F 0 "#PWR0101" H 10800 2650 50  0001 C CNN
+F 1 "Earth" H 10800 2750 50  0001 C CNN
+F 2 "" H 10800 2900 50  0001 C CNN
+F 3 "~" H 10800 2900 50  0001 C CNN
+	1    10800 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 2750 10800 2850
+Wire Wire Line
+	10800 2150 10800 2100
+$Comp
+L Device:CP C30
+U 1 1 5AE6E2F6
+P 11500 2450
+F 0 "C30" H 11550 2550 50  0000 L CNN
+F 1 "82uF" H 11550 2350 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 11538 2300 50  0001 C CNN
+F 3 "http://nichicon-us.com/english/products/pdfs/e-ucy.pdf" H 11500 2450 50  0001 C CNN
+F 4 "CAP 82µF ±20% 400V Aluminum Electrolytic Capacitors Leaded" H 11500 2450 50  0001 C CNN "Description"
+F 5 "Nichicon" H 11500 2450 50  0001 C CNN "Manufacturer"
+F 6 "UCY2G820MHD3TN" H 11500 2450 50  0001 C CNN "MPN"
+F 7 "647-UCY2G820MHD3TN" H 11500 2450 50  0001 C CNN "Mouser"
+F 8 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 9 "493-4832-1-ND" H 11500 2450 50  0001 C CNN "Digikey"
+F 10 "400BXW82MEFR18X25" H 11500 2450 50  0001 C CNN "Alternative"
+F 11 "none" H 5150 1200 50  0001 C CNN "Feed"
+	1    11500 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 2100 11500 2100
+Wire Wire Line
+	11500 2100 11500 2300
+Wire Wire Line
+	10800 2850 11500 2850
+Wire Wire Line
+	11500 2850 11500 2600
+Wire Wire Line
+	10800 2850 10800 2900
+Connection ~ 10800 2850
+$Comp
+L Device:C C33
+U 1 1 5AE7210D
+P 11850 2450
+F 0 "C33" H 11900 2550 50  0000 L CNN
+F 1 "0.47uF" H 11900 2350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1812_4532Metric" H 11888 2300 50  0001 C CNN
+F 3 "http://www.knowlescapacitors.com/getattachment/054e0720-4af7-4b6e-a5c2-b94c2786cfac/StackiCap.aspx" H 11850 2450 50  0001 C CNN
+F 4 "Knowles Syfer" H 11850 2450 50  0001 C CNN "Manufacturer"
+F 5 "1812Y5000474KXTWS2" H 11850 2450 50  0001 C CNN "MPN"
+F 6 "843-1812Y5000474KXS2" H 11850 2450 50  0001 C CNN "Mouser"
+F 7 "CAP 0.47µF ±10% 500V Ceramic Capacitor X7R 1812" H 11850 2450 50  0001 C CNN "Description"
+F 8 "1608-1155-2-ND" H 11850 2450 50  0001 C CNN "Digikey"
+F 9 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 10 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 11 "none" H 5150 1200 50  0001 C CNN "Feed"
+	1    11850 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11500 2100 11850 2100
+Connection ~ 11500 2100
+Wire Wire Line
+	11500 2850 11850 2850
+Connection ~ 11500 2850
+Wire Wire Line
+	11850 2100 11850 2300
+Wire Wire Line
+	11850 2600 11850 2850
+$Comp
+L Device:C C36
+U 1 1 5AE72F86
+P 12350 2350
+F 0 "C36" H 12200 2450 50  0000 L CNN
+F 1 "0.22uF/500V" V 12400 1800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1812_4532Metric" H 12388 2200 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM43DR72H224KW10-01.pdf" H 12350 2350 50  0001 C CNN
+F 4 "GRM43DR72H224KW10L" H 12350 2350 50  0001 C CNN "MPN"
+F 5 "Murata" H 12350 2350 50  0001 C CNN "Manufacturer"
+F 6 "CAP 0.22µF ±10% 500V Ceramic Capacitor X7R 1812" H 12350 2350 50  0001 C CNN "Description"
+F 7 "81-GRM43DR72H224KW0L" H 12350 2350 50  0001 C CNN "Mouser"
+F 8 "490-16628-2-ND" H 12350 2350 50  0001 C CNN "Digikey"
+F 9 "GRM43DR72H224KW10K" H 12350 2350 50  0001 C CNN "Alternative"
+F 10 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 11 "none" H 5150 1200 50  0001 C CNN "Feed"
+	1    12350 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C38
+U 1 1 5AE7311E
+P 12550 2350
+F 0 "C38" H 12400 2450 50  0000 L CNN
+F 1 "0.22uF/500V" V 12600 1800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1812_4532Metric" H 12588 2200 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM43DR72H224KW10-01.pdf" H 12550 2350 50  0001 C CNN
+F 4 "GRM43DR72H224KW10L" H 12550 2350 50  0001 C CNN "MPN"
+F 5 "Murata" H 12550 2350 50  0001 C CNN "Manufacturer"
+F 6 "CAP 0.22µF ±10% 500V Ceramic Capacitor X7R 1812" H 12550 2350 50  0001 C CNN "Description"
+F 7 "81-GRM43DR72H224KW0L" H 12550 2350 50  0001 C CNN "Mouser"
+F 8 "490-16628-2-ND" H 12550 2350 50  0001 C CNN "Digikey"
+F 9 "GRM43DR72H224KW10K" H 12550 2350 50  0001 C CNN "Alternative"
+F 10 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 11 "none" H 5150 1200 50  0001 C CNN "Feed"
+	1    12550 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11850 2100 12350 2100
+Wire Wire Line
+	12350 2100 12350 2200
+Connection ~ 11850 2100
+Connection ~ 12350 2100
+$Comp
+L Device:R R33
+U 1 1 5AE73902
+P 12750 2350
+F 0 "R33" H 12820 2396 50  0000 L CNN
+F 1 "1M" H 12820 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 12680 2350 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20008/dcrcw.pdf" H 12750 2350 50  0001 C CNN
+F 4 "RES 1 MOhms ±1% 0.125W Chip Resistor 0805 " H 5150 1200 50  0001 C CNN "Description"
+F 5 "CRCW08051M00FKTB-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 6 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 7 "CRCW08051M00FKTB" H 5150 1200 50  0001 C CNN "MPN"
+F 8 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 9 "71-CRCW08051004FT" H 5150 1200 50  0001 C CNN "Mouser"
+F 10 "ERJ-P6WF1004V" H 5150 1200 50  0001 C CNN "Alternative"
+F 11 "1853267" H 5150 1200 50  0001 C CNN "Farnell"
+	1    12750 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12350 3000 12350 2500
+$Comp
+L Device:R R34
+U 1 1 5AE749F4
+P 12750 2750
+F 0 "R34" H 12820 2796 50  0000 L CNN
+F 1 "1M" H 12820 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 12680 2750 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20008/dcrcw.pdf" H 12750 2750 50  0001 C CNN
+F 4 "RES 1 MOhms ±1% 0.125W Chip Resistor 0805 " H 5150 1200 50  0001 C CNN "Description"
+F 5 "CRCW08051M00FKTB-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 6 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 7 "CRCW08051M00FKTB" H 5150 1200 50  0001 C CNN "MPN"
+F 8 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 9 "71-CRCW08051004FT" H 5150 1200 50  0001 C CNN "Mouser"
+F 10 "ERJ-P6WF1004V" H 5150 1200 50  0001 C CNN "Alternative"
+F 11 "1853267" H 5150 1200 50  0001 C CNN "Farnell"
+	1    12750 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 2450 9050 2450
+Wire Wire Line
+	8800 2650 9500 2650
+Text Label 8800 2450 0    50   ~ 0
+L
+Text Label 8800 2650 0    50   ~ 0
+N
+$Comp
+L Device:R R3
+U 1 1 5AE75710
+P 6450 3400
+F 0 "R3" V 6350 3300 50  0000 C CNN
+F 1 "10R" V 6350 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6380 3400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28773/crcwce3.pdf" H 6450 3400 50  0001 C CNN
+F 4 "ERJ-3EKF10R0V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 10 Ohms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-3952-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1469751" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW060310R0FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW060310R0FKEAC" H 5150 1200 50  0001 C CNN "Mouser"
+	1    6450 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5AE757B1
+P 6700 3650
+F 0 "R5" H 6750 3700 50  0000 L CNN
+F 1 "10k" H 6750 3600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6630 3650 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 6700 3650 50  0001 C CNN
+F 4 "ERJ-3EKF1002V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 10 kOhms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-10.0KHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1469748" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW060310K0FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-10K-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    6700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3400 6700 3400
+Wire Wire Line
+	6700 3400 6700 3500
+Wire Wire Line
+	6300 3400 6100 3400
+$Comp
+L Device:Q_PMOS_GSD Q4
+U 1 1 5AE76797
+P 7100 3500
+F 0 "Q4" V 7300 3350 50  0000 C CNN
+F 1 "DMP510DL" V 7300 3800 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7300 3600 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP510DL.pdf" H 7100 3500 50  0001 C CNN
+F 4 "NDS0605" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "P-Channel 50V 180mA (Ta) 310mW (Ta) Surface Mount SOT-23" H 5150 1200 50  0001 C CNN "Description"
+F 6 "DMP510DL-7DITR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "DMP510DL-7" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Diodes Incorporated" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "621-DMP510DL-7" H 5150 1200 50  0001 C CNN "Mouser"
+	1    7100 3500
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6700 3400 6900 3400
+Connection ~ 6700 3400
+Wire Wire Line
+	6700 3800 6700 3900
+Wire Wire Line
+	6700 3900 7100 3900
+Wire Wire Line
+	7100 3900 7100 3700
+Wire Wire Line
+	7300 3400 7400 3400
+$Comp
+L Device:C C12
+U 1 1 5AE77ED5
+P 7600 3750
+F 0 "C12" H 7650 3850 50  0000 L CNN
+F 1 "0.022uF" H 7650 3650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7638 3600 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 7600 3750 50  0001 C CNN
+F 4 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 0.022µF ±10% 100V Ceramic Capacitor X7R 0603" H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-3284-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1865548" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM188R72A223KAC4D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "81-GRM188R72A223KA4D" H 5150 1200 50  0001 C CNN "Mouser"
+F 11 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+	1    7600 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3400 7600 3400
+Wire Wire Line
+	7600 3400 7600 3600
+Connection ~ 7400 3400
+$Comp
+L Device:R R13
+U 1 1 5AE78930
+P 7850 3400
+F 0 "R13" V 7750 3350 50  0000 C CNN
+F 1 "2R" V 7750 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7780 3400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20008/dcrcw.pdf" H 7850 3400 50  0001 C CNN
+F 4 "ERJ-3GEYJ2R0V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 2 Ohms ±5% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "CRCW06032R00JNTA-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1889800" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW06032R00JNTA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603J-2" H 5150 1200 50  0001 C CNN "Mouser"
+	1    7850 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 3400 7700 3400
+Connection ~ 7600 3400
+$Comp
+L Device:D D3
+U 1 1 5AE7945F
+P 8250 3400
+F 0 "D3" H 8350 3300 50  0000 C CNN
+F 1 "RFU02VSM6S" H 8000 3300 50  0000 C CNN
+F 2 "custom-footprint:TUMD2SM" H 8250 3400 50  0001 C CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/discrete/diode/fast_recovery/rfu02vsm6s.pdf" H 8250 3400 50  0001 C CNN
+F 4 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "Diode Standard 600V 200mA ???" H 5150 1200 50  0001 C CNN "Description"
+F 6 "RFU02VSM6STRTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "RFU02VSM6STR" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Rohm Semiconductor" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "755-RFU02VSM6STR" H 5150 1200 50  0001 C CNN "Mouser"
+	1    8250 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 3400 8100 3400
+$Comp
+L custom-lib:ISO7710 U2
+U 1 1 5AE7B328
+P 8550 3750
+F 0 "U2" H 8600 3800 50  0000 C CNN
+F 1 "ISO7710" H 8700 3000 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8550 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/iso7710.pdf" H 8550 3750 50  0001 C CNN
+F 4 "General Purpose Digital Isolator 3000Vrms 1 Channel 100Mbps 85kV/µs CMTI 8-SOIC " H 5150 1200 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 6 "ISO7710DR" H 5150 1200 50  0001 C CNN "MPN"
+F 7 "595-ISO7710DR" H 5150 1200 50  0001 C CNN "Mouser"
+F 8 "1226206" H 5150 1200 50  0001 C CNN "Farnell"
+F 9 "296-48557-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 10 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 11 "none" H 5150 1200 50  0001 C CNN "Feed"
+	1    8550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3850 8350 3850
+Wire Wire Line
+	8350 3850 8350 3950
+Wire Wire Line
+	8350 3950 8450 3950
+Connection ~ 8350 3850
+Text Label 8350 3650 3    50   ~ 0
+VCC1
+$Comp
+L Device:C C13
+U 1 1 5AE7CCDD
+P 8100 4150
+F 0 "C13" H 8150 4250 50  0000 L CNN
+F 1 "0.022uF" H 8150 4050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8138 4000 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 8100 4150 50  0001 C CNN
+F 4 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 0.022µF ±10% 100V Ceramic Capacitor X7R 0603" H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-3284-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1865548" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM188R72A223KAC4D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM188R72A223KA4D" H 5150 1200 50  0001 C CNN "Mouser"
+	1    8100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4000 8100 3950
+Wire Wire Line
+	8100 3950 8350 3950
+Connection ~ 8350 3950
+Wire Wire Line
+	8450 4350 8100 4350
+Wire Wire Line
+	8100 4350 8100 4300
+Wire Wire Line
+	8450 4150 8350 4150
+Wire Wire Line
+	8350 4150 8350 4400
+Connection ~ 8100 4350
+Wire Wire Line
+	6600 4400 8350 4400
+$Comp
+L Device:R R4
+U 1 1 5AE848AA
+P 6450 4400
+F 0 "R4" V 6350 4300 50  0000 C CNN
+F 1 "10R" V 6350 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6380 4400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28773/crcwce3.pdf" H 6450 4400 50  0001 C CNN
+F 4 "ERJ-3EKF10R0V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 10 Ohms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-3952-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1469751" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW060310R0FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW060310R0FKEAC" H 5150 1200 50  0001 C CNN "Mouser"
+	1    6450 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 4400 6100 4400
+Text Label 6100 3400 0    50   ~ 0
+VDD
+Text Label 6100 4400 0    50   ~ 0
+PWMH
+Wire Wire Line
+	7600 3900 7600 4350
+Wire Wire Line
+	7600 4350 8100 4350
+Wire Wire Line
+	7400 3400 7400 4950
+$Comp
+L Device:Q_NMOS_GSD Q2
+U 1 1 5AE89845
+P 7000 4950
+F 0 "Q2" H 7200 5100 50  0000 L CNN
+F 1 "2N7002KW" H 7200 4800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 7200 5050 50  0001 C CNN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002KW.pdf" H 7000 4950 50  0001 C CNN
+F 4 "BSS138W-7-F" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "N-Channel 60V 310mA (Ta) 350mW (Ta) Surface Mount SOT-323" H 5150 1200 50  0001 C CNN "Description"
+F 6 "2N7002KWTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2454145" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "2N7002KW" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "ON Semiconductor" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "512-2N7002KW" H 5150 1200 50  0001 C CNN "Mouser"
+	1    7000 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3900 7100 4750
+Connection ~ 7100 3900
+$Comp
+L Device:R R6
+U 1 1 5AE8AD6B
+P 6800 5250
+F 0 "R6" V 6700 5100 50  0000 C CNN
+F 1 "100k" V 6700 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6730 5250 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28773/crcwce3.pdf" H 6800 5250 50  0001 C CNN
+F 4 "ERJ-3EKF1003V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 100 kOhms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-3950-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2122619" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW0603100KFKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-100K-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    6800 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 4950 6550 5250
+Wire Wire Line
+	6550 5250 6650 5250
+Wire Wire Line
+	6550 4950 6800 4950
+Wire Wire Line
+	6950 5250 7100 5250
+Wire Wire Line
+	7100 5250 7100 5150
+Wire Wire Line
+	7050 6050 6950 6050
+$Comp
+L Device:R R7
+U 1 1 5AE913FD
+P 6800 6050
+F 0 "R7" V 6700 5950 50  0000 C CNN
+F 1 "1.6k" V 6700 6150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6730 6050 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 6800 6050 50  0001 C CNN
+F 4 "ERJ-3EKF1601V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 1.6 kOhms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-1.60KHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2138367" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW06031K60FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-1.6K-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    6800 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 6050 6100 6050
+Text Label 6100 6050 0    50   ~ 0
+CS
+$Comp
+L Device:R R8
+U 1 1 5AE932E8
+P 7050 6300
+F 0 "R8" H 7120 6346 50  0000 L CNN
+F 1 "0.18R" H 7120 6255 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6980 6300 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf" H 7050 6300 50  0001 C CNN
+F 4 "WW12PR180FTL" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 180 mOhms ±1% 0.5W Chip Resistor 1206 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "P17683TR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "ERJ-8BSFR18V" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Panasonic" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "667-ERJ-8BSFR18V" H 5150 1200 50  0001 C CNN "Mouser"
+	1    7050 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 6150 7050 6050
+Connection ~ 7050 6050
+Wire Wire Line
+	7050 6450 7050 6550
+$Comp
+L power:Earth #PWR0102
+U 1 1 5AE9702E
+P 7050 6550
+F 0 "#PWR0102" H 7050 6300 50  0001 C CNN
+F 1 "Earth" H 7050 6400 50  0001 C CNN
+F 2 "" H 7050 6550 50  0001 C CNN
+F 3 "~" H 7050 6550 50  0001 C CNN
+	1    7050 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C19
+U 1 1 5AE9D026
+P 9600 4050
+F 0 "C19" H 9600 4150 50  0000 L CNN
+F 1 "0.022uF" V 9650 3700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9638 3900 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 9600 4050 50  0001 C CNN
+F 4 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 0.022µF ±10% 100V Ceramic Capacitor X7R 0603" H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-3284-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1865548" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM188R72A223KAC4D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM188R72A223KA4D" H 5150 1200 50  0001 C CNN "Mouser"
+	1    9600 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 3850 9600 3850
+Wire Wire Line
+	9600 3850 9600 3900
+Wire Wire Line
+	9600 4200 9600 4350
+Connection ~ 9600 3850
+Text Label 9600 3650 3    50   ~ 0
+VCC2
+Wire Wire Line
+	9250 4350 9600 4350
+Wire Wire Line
+	9250 4250 9250 4350
+Wire Wire Line
+	9250 4150 9350 4150
+$Comp
+L Device:R R18
+U 1 1 5AEAA0F2
+P 9750 3600
+F 0 "R18" V 9650 3500 50  0000 C CNN
+F 1 "10R" V 9650 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9680 3600 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28773/crcwce3.pdf" H 9750 3600 50  0001 C CNN
+F 4 "ERJ-3EKF10R0V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 10 Ohms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-3952-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1469751" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW060310R0FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW060310R0FKEAC" H 5150 1200 50  0001 C CNN "Mouser"
+	1    9750 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 5AEAC69B
+P 10300 4050
+F 0 "C21" H 10300 4150 50  0000 L CNN
+F 1 "0.022uF" V 10350 3700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10338 3900 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 10300 4050 50  0001 C CNN
+F 4 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 0.022µF ±10% 100V Ceramic Capacitor X7R 0603" H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-3284-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1865548" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM188R72A223KAC4D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM188R72A223KA4D" H 5150 1200 50  0001 C CNN "Mouser"
+	1    10300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 5AEB87AA
+P 9950 4050
+F 0 "C20" H 9950 4150 50  0000 L CNN
+F 1 "3.3pF" V 10000 3800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9988 3900 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 9950 4050 50  0001 C CNN
+F 4 "C0603C339C5GACTU" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 3.3pF ±0.25pF 50V Ceramic Capacitor C0G, NP0 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-10717-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2434647" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM1885C1H3R3CA01D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM1885C1H3R3CA1D" H 5150 1200 50  0001 C CNN "Mouser"
+	1    9950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom-lib:NV6115 U4
+U 1 1 5AEBE8B6
+P 12050 3300
+F 0 "U4" H 12877 2946 50  0000 L CNN
+F 1 "NV6115" H 12877 2855 50  0000 L CNN
+F 2 "" H 12050 3300 50  0001 C CNN
+F 3 "" H 12050 3300 50  0001 C CNN
+F 4 "GaN power ICs" H 5150 1200 50  0001 C CNN "Description"
+F 5 "Navitas Semiconductor" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 6 "none" H 5150 1200 50  0001 C CNN "Mouser"
+F 7 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Digikey"
+F 9 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 10 "none" H 5150 1200 50  0001 C CNN "Feed"
+	1    12050 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12350 2100 12550 2100
+Wire Wire Line
+	12750 2600 12750 2500
+Wire Wire Line
+	12750 2200 12750 2100
+Wire Wire Line
+	12550 2100 12550 2200
+Connection ~ 12550 2100
+Wire Wire Line
+	12550 2100 12750 2100
+Wire Wire Line
+	12550 2500 12550 3000
+Wire Wire Line
+	12350 3000 12550 3000
+Connection ~ 12550 3000
+Wire Wire Line
+	12550 3000 12650 3000
+Wire Wire Line
+	12750 2900 12750 3000
+Wire Wire Line
+	12450 3200 12450 3100
+Wire Wire Line
+	12450 3100 12550 3100
+Wire Wire Line
+	12550 3100 12550 3000
+Wire Wire Line
+	12550 3200 12550 3100
+Connection ~ 12550 3100
+Wire Wire Line
+	12550 3100 12650 3100
+Wire Wire Line
+	12650 3100 12650 3200
+Wire Wire Line
+	12650 3100 12650 3000
+Connection ~ 12650 3100
+Connection ~ 12650 3000
+Wire Wire Line
+	12650 3000 12750 3000
+Wire Wire Line
+	12750 3200 12750 3100
+Wire Wire Line
+	12750 3100 12650 3100
+Wire Wire Line
+	12750 3100 12750 3000
+Connection ~ 12750 3100
+Connection ~ 12750 3000
+Text Label 11700 3400 0    50   ~ 0
+VCCH
+Wire Wire Line
+	8400 3400 10300 3400
+Wire Wire Line
+	9350 4150 9350 3600
+Wire Wire Line
+	9350 3600 9600 3600
+Wire Wire Line
+	9600 3650 9600 3850
+Wire Wire Line
+	8350 3650 8350 3850
+Wire Wire Line
+	9900 3600 9950 3600
+Wire Wire Line
+	9950 3900 9950 3600
+Connection ~ 9950 3600
+Wire Wire Line
+	9950 4200 9950 4500
+Wire Wire Line
+	10300 4200 10300 4500
+$Comp
+L Device:R R21
+U 1 1 5AF1C2D0
+P 11050 3800
+F 0 "R21" V 10950 3700 50  0000 C CNN
+F 1 "10R" V 10950 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10980 3800 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28773/crcwce3.pdf" H 11050 3800 50  0001 C CNN
+F 4 "ERJ-3EKF10R0V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 10 Ohms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-3952-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1469751" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW060310R0FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW060310R0FKEAC" H 5150 1200 50  0001 C CNN "Mouser"
+	1    11050 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D7
+U 1 1 5AF1F614
+P 10650 3800
+F 0 "D7" H 10650 3700 50  0000 C CNN
+F 1 "CZRU52C2" H 10650 3900 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 10650 3800 50  0001 C CNN
+F 3 "http://www.comchiptech.com/cms/UserFiles/CZRU52C2%20THRU%20CZRU52C39-RevB.pdf" H 10650 3800 50  0001 C CNN
+F 4 "Zener Diode 2V 150mW ±5% SOD-523F" H 5150 1200 50  0001 C CNN "Description"
+F 5 "641-1019-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 6 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 7 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 8 "CZRU52C2" H 5150 1200 50  0001 C CNN "MPN"
+F 9 "Comchip Technology	" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 10 "750-CZRU52C2" H 5150 1200 50  0001 C CNN "Mouser"
+F 11 "TSZU52C2V0 RGG" H 5150 1200 50  0001 C CNN "Alternative"
+	1    10650 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10500 3800 10400 3800
+Text Label 10400 3800 0    50   ~ 0
+VCC2
+Wire Wire Line
+	10800 3800 10850 3800
+Wire Wire Line
+	11200 3800 11600 3800
+$Comp
+L Device:C C26
+U 1 1 5AF2C67B
+P 10850 4050
+F 0 "C26" H 10850 4150 50  0000 L CNN
+F 1 "0.01uF" H 10850 3950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10888 3900 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 10850 4050 50  0001 C CNN
+F 4 "GCM188R71H103KA37D" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 " CAP 0.01µF ±10% 50V Ceramic Capacitor X7R 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-1512-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2462748" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM188R71H103KA01D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM39X103K50D" H 5150 1200 50  0001 C CNN "Mouser"
+	1    10850 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 3900 10850 3800
+Connection ~ 10850 3800
+Wire Wire Line
+	10850 3800 10900 3800
+Wire Wire Line
+	10850 4200 10850 4500
+$Comp
+L Device:D_Zener D12
+U 1 1 5AF334FB
+P 11850 4250
+F 0 "D12" V 11750 4300 50  0000 L CNN
+F 1 "CZRU52C6V2" V 11950 4300 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-523" H 11850 4250 50  0001 C CNN
+F 3 "http://www.comchiptech.com/cms/UserFiles/CZRU52C2%20THRU%20CZRU52C39-RevB.pdf" H 11850 4250 50  0001 C CNN
+F 4 "TSZU52C6V2 RGG" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "Zener Diode 6.2V 150mW ±5% SOD-523F" H 5150 1200 50  0001 C CNN "Description"
+F 6 "641-1031-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CZRU52C6V2" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Comchip Technology	" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "750-CZRU52C6V2" H 5150 1200 50  0001 C CNN "Mouser"
+	1    11850 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11850 4100 11850 4000
+Wire Wire Line
+	11850 4000 11950 4000
+Wire Wire Line
+	11850 4400 11850 4500
+Wire Wire Line
+	11850 4500 11300 4500
+Connection ~ 10850 4500
+Wire Wire Line
+	10850 4500 10300 4500
+Connection ~ 10300 4500
+Wire Wire Line
+	10300 4500 9950 4500
+Connection ~ 9950 4500
+Wire Wire Line
+	9950 4500 9600 4500
+Wire Wire Line
+	9600 4500 9600 4350
+Connection ~ 9600 4350
+$Comp
+L Device:R R25
+U 1 1 5AF46A00
+P 11600 4000
+F 0 "R25" V 11500 3900 50  0000 C CNN
+F 1 "47.5k" V 11500 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11530 4000 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20008/dcrcw.pdf" H 11600 4000 50  0001 C CNN
+F 4 "ERJ-3EKF4752V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 47.5 kOhms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-47.5KHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1469813" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW060347K5FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-47.5K-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    11600 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11750 4000 11850 4000
+Connection ~ 11850 4000
+Wire Wire Line
+	11450 4000 11350 4000
+Wire Wire Line
+	11350 4000 11350 3400
+Connection ~ 11350 3400
+Wire Wire Line
+	11350 3400 11950 3400
+$Comp
+L custom-lib:NV6115 U5
+U 1 1 5AF4E8DC
+P 12050 4850
+F 0 "U5" H 12877 4496 50  0000 L CNN
+F 1 "NV6117" H 12877 4405 50  0000 L CNN
+F 2 "" H 12050 4850 50  0001 C CNN
+F 3 "" H 12050 4850 50  0001 C CNN
+F 4 "GaN power ICs" H 5150 1200 50  0001 C CNN "Description"
+F 5 "Navitas Semiconductor" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 6 "none" H 5150 1200 50  0001 C CNN "Mouser"
+F 7 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Digikey"
+F 9 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 10 "none" H 5150 1200 50  0001 C CNN "Feed"
+	1    12050 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11850 4500 12450 4500
+Wire Wire Line
+	12750 4500 12750 4200
+Connection ~ 11850 4500
+Wire Wire Line
+	12450 4750 12450 4500
+Connection ~ 12450 4500
+Wire Wire Line
+	12450 4500 12550 4500
+Wire Wire Line
+	12550 4750 12550 4500
+Connection ~ 12550 4500
+Wire Wire Line
+	12550 4500 12650 4500
+Wire Wire Line
+	12650 4750 12650 4500
+Connection ~ 12650 4500
+Wire Wire Line
+	12650 4500 12750 4500
+Wire Wire Line
+	12750 4750 12750 4500
+Connection ~ 12750 4500
+Wire Wire Line
+	11950 4950 10300 4950
+Text Label 11700 4950 0    50   ~ 0
+VCCL
+$Comp
+L Device:D_Zener D13
+U 1 1 5AF6C941
+P 11850 5800
+F 0 "D13" V 11750 5850 50  0000 L CNN
+F 1 "CZRU52C6V2" V 11950 5850 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-523" H 11850 5800 50  0001 C CNN
+F 3 "http://www.comchiptech.com/cms/UserFiles/CZRU52C2%20THRU%20CZRU52C39-RevB.pdf" H 11850 5800 50  0001 C CNN
+F 4 "TSZU52C6V2 RGG" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "Zener Diode 6.2V 150mW ±5% SOD-523F" H 5150 1200 50  0001 C CNN "Description"
+F 6 "641-1031-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CZRU52C6V2" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Comchip Technology	" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "750-CZRU52C6V2" H 5150 1200 50  0001 C CNN "Mouser"
+	1    11850 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11850 5650 11850 5550
+Wire Wire Line
+	11850 5550 11950 5550
+Wire Wire Line
+	11850 5950 11850 6050
+Wire Wire Line
+	11850 6050 12750 6050
+Wire Wire Line
+	12750 6050 12750 5750
+$Comp
+L Device:R R22
+U 1 1 5AF7A56F
+P 11050 5350
+F 0 "R22" V 10950 5250 50  0000 C CNN
+F 1 "10R" V 10950 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10980 5350 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28773/crcwce3.pdf" H 11050 5350 50  0001 C CNN
+F 4 "ERJ-3EKF10R0V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 10 Ohms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-3952-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1469751" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW060310R0FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW060310R0FKEAC" H 5150 1200 50  0001 C CNN "Mouser"
+	1    11050 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D8
+U 1 1 5AF7A576
+P 10650 5350
+F 0 "D8" H 10650 5250 50  0000 C CNN
+F 1 "CZRU52C2" H 10650 5450 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 10650 5350 50  0001 C CNN
+F 3 "http://www.comchiptech.com/cms/UserFiles/CZRU52C2%20THRU%20CZRU52C39-RevB.pdf" H 10650 5350 50  0001 C CNN
+F 4 "TSZU52C2V0 RGG" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "Zener Diode 2V 150mW ±5% SOD-523F" H 5150 1200 50  0001 C CNN "Description"
+F 6 "641-1019-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CZRU52C2" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Comchip Technology	" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "750-CZRU52C2" H 5150 1200 50  0001 C CNN "Mouser"
+	1    10650 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10500 5350 10400 5350
+Wire Wire Line
+	10800 5350 10850 5350
+Wire Wire Line
+	11200 5350 11550 5350
+$Comp
+L Device:C C27
+U 1 1 5AF7A581
+P 10850 5600
+F 0 "C27" H 10900 5700 50  0000 L CNN
+F 1 "0.01uF" H 10900 5500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10888 5450 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 10850 5600 50  0001 C CNN
+F 4 "GCM188R71H103KA37D" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 " CAP 0.01µF ±10% 50V Ceramic Capacitor X7R 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-1512-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2462748" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM188R71H103KA01D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM39X103K50D" H 5150 1200 50  0001 C CNN "Mouser"
+	1    10850 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 5450 10850 5350
+Connection ~ 10850 5350
+Wire Wire Line
+	10850 5350 10900 5350
+Text Label 10400 5350 0    50   ~ 0
+VCC1
+Wire Wire Line
+	10850 5750 10850 6050
+Wire Wire Line
+	10850 6050 11850 6050
+Connection ~ 11850 6050
+Wire Wire Line
+	9950 3600 11950 3600
+Wire Wire Line
+	10300 3900 10300 3400
+Connection ~ 10300 3400
+Wire Wire Line
+	10300 3400 11350 3400
+$Comp
+L Device:C C22
+U 1 1 5AF8F47A
+P 10300 5600
+F 0 "C22" H 10200 5700 50  0000 L CNN
+F 1 "0.022uF" V 10350 5250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10338 5450 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 10300 5600 50  0001 C CNN
+F 4 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 0.022µF ±10% 100V Ceramic Capacitor X7R 0603" H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-3284-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1865548" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM188R72A223KAC4D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM188R72A223KA4D" H 5150 1200 50  0001 C CNN "Mouser"
+	1    10300 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 5750 10300 6050
+Wire Wire Line
+	10300 5450 10300 4950
+Connection ~ 10300 4950
+Wire Wire Line
+	10300 4950 7400 4950
+Wire Wire Line
+	10300 6050 10850 6050
+Connection ~ 10850 6050
+Wire Wire Line
+	8100 4350 8100 6050
+Wire Wire Line
+	8100 6050 10300 6050
+Connection ~ 10300 6050
+Wire Wire Line
+	7050 6050 8100 6050
+Connection ~ 8100 6050
+Wire Wire Line
+	11950 5150 8350 5150
+Wire Wire Line
+	8350 5150 8350 5400
+Wire Wire Line
+	6100 5400 8350 5400
+Text Label 6100 5400 0    50   ~ 0
+PWML
+Wire Wire Line
+	6550 5250 6550 5700
+Wire Wire Line
+	6550 5700 6100 5700
+Connection ~ 6550 5250
+Text Label 6100 5700 0    50   ~ 0
+RUN
+$Comp
+L Device:D_Schottky D1
+U 1 1 5AFD34C0
+P 6900 5700
+F 0 "D1" H 7050 5600 50  0000 C CNN
+F 1 "SDM03U40-7" H 6600 5600 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 6900 5700 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30392.pdf" H 6900 5700 50  0001 C CNN
+F 4 "BAS40T-7-F" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "Diode Schottky 30V 30mA SOD-523" H 5150 1200 50  0001 C CNN "Description"
+F 6 "SDM03U40DITR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "SDM03U40-7" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Diodes Incorporated" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "621-SDM03U40-F" H 5150 1200 50  0001 C CNN "Mouser"
+	1    6900 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6750 5700 6550 5700
+Connection ~ 6550 5700
+Wire Wire Line
+	7050 5700 9900 5700
+Connection ~ 11850 5550
+Wire Wire Line
+	9900 5700 9900 5200
+Wire Wire Line
+	9900 5200 11350 5200
+Wire Wire Line
+	11350 5200 11350 5550
+Wire Wire Line
+	11350 5550 11850 5550
+$Comp
+L custom-lib:UCC28780 U3
+U 1 1 5AFE8B9F
+P 9550 7700
+F 0 "U3" H 9600 7750 50  0000 C CNN
+F 1 "UCC28780" H 9750 6050 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP2.7x2.7mm_ThermalVias" H 9550 7700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ucc28780.pdf" H 9550 7700 50  0001 C CNN
+F 4 "High Frequency Active Clamp Flyback Controller" H 5150 1200 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 6 "UCC28780RTET" H 5150 1200 50  0001 C CNN "MPN"
+F 7 "595-UCC28780RTET" H 5150 1200 50  0001 C CNN "Mouser"
+F 8 "2855652" H 5150 1200 50  0001 C CNN "Farnell"
+F 9 "296-48863-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 10 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 11 "none" H 5150 1200 50  0001 C CNN "Feed"
+	1    9550 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q5
+U 1 1 5AFE8D22
+P 7550 7900
+F 0 "Q5" H 7750 8050 50  0000 L CNN
+F 1 "BSS126H6906" H 7750 7750 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7750 8000 50  0001 C CNN
+F 3 "https://www.infineon.com/dgdl/BSS126_Rev2.0_.pdf?folderId=db3a3043156fd573011622e10b5c1f67&fileId=db3a304330f6860601310483af163eba" H 7550 7900 50  0001 C CNN
+F 4 "AO3160" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "N-Channel 600V 21mA (Ta) 500mW (Ta) Surface Mount PG-SOT23-3" H 5150 1200 50  0001 C CNN "Description"
+F 6 "BSS126H6906XTSA1TR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2432715" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "BSS126H6906XTSA1" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Infineon Technologies" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "726-BSS126H6906" H 5150 1200 50  0001 C CNN "Mouser"
+	1    7550 7900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 7450 7450 7700
+Text Label 7450 7450 0    50   ~ 0
+VSW
+$Comp
+L Device:D_Zener D2
+U 1 1 5AFF69BC
+P 7850 8150
+F 0 "D2" V 7750 8200 50  0000 L CNN
+F 1 "BZT52C22T-7" H 7850 8250 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-523" H 7850 8150 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30502.pdf" H 7850 8150 50  0001 C CNN
+F 4 "BZX585-C22,115" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "Zener Diode 22V 300mW ±6% SOD-523" H 5150 1200 50  0001 C CNN "Description"
+F 6 "BZT52C22T-7DITR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "BZT52C22T-7" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Diodes Incorporated" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "621-BZT52C22T-7" H 5150 1200 50  0001 C CNN "Mouser"
+	1    7850 8150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 7900 7850 7900
+Wire Wire Line
+	7850 7900 7850 8000
+$Comp
+L Device:R R11
+U 1 1 5B00B7DB
+P 7450 8350
+F 0 "R11" H 7520 8396 50  0000 L CNN
+F 1 "121R" H 7520 8305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7380 8350 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28773/crcwce3.pdf" H 7450 8350 50  0001 C CNN
+F 4 "ERJ-3EKF1210V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 121 Ohms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-121HTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1652833" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW0603121RFKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-121-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    7450 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 8200 7450 8100
+Wire Wire Line
+	7850 7900 8150 7900
+Connection ~ 7850 7900
+$Comp
+L power:Earth #PWR0103
+U 1 1 5B01A20A
+P 9350 9800
+F 0 "#PWR0103" H 9350 9550 50  0001 C CNN
+F 1 "Earth" H 9350 9650 50  0001 C CNN
+F 2 "" H 9350 9800 50  0001 C CNN
+F 3 "~" H 9350 9800 50  0001 C CNN
+	1    9350 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 5B021812
+P 8150 8150
+F 0 "C14" H 8200 8250 50  0000 L CNN
+F 1 "2200pF" V 8250 7600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8188 8000 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 8150 8150 50  0001 C CNN
+F 4 "C0603C222K5GAC7867" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 2200pF ±5% 50V Ceramic Capacitor C0G, NP0 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-1459-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "8819947" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM1885C1H222JA01D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM1885C1H222JA01" H 5150 1200 50  0001 C CNN "Mouser"
+	1    8150 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 8000 8150 7900
+Connection ~ 8150 7900
+Wire Wire Line
+	8150 7900 8400 7900
+$Comp
+L Device:D_Zener D5
+U 1 1 5B030FB8
+P 9350 9350
+F 0 "D5" V 9250 9400 50  0000 L CNN
+F 1 "CDSOD323-T24S" H 9350 9450 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 9350 9350 50  0001 C CNN
+F 3 "http://www.bourns.com/docs/Product-Datasheets/CDSOD323-TxxSC.pdf" H 9350 9350 50  0001 C CNN
+F 4 "TVS Diode 24V 49V SOD323" H 5150 1200 50  0001 C CNN "Description"
+F 5 "CDSOD323-T24STR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 6 "2341950" H 5150 1200 50  0001 C CNN "Farnell"
+F 7 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 8 "CDSOD323-T24S" H 5150 1200 50  0001 C CNN "MPN"
+F 9 "Bourns Inc." H 5150 1200 50  0001 C CNN "Manufacturer"
+F 10 "652-CDSOD323-T24S" H 5150 1200 50  0001 C CNN "Mouser"
+F 11 "none" H 5150 1200 50  0001 C CNN "Alternative"
+	1    9350 9350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 9200 9350 9100
+Wire Wire Line
+	9350 9100 9450 9100
+$Comp
+L Device:C C17
+U 1 1 5B040E3B
+P 9100 9350
+F 0 "C17" H 9150 9450 50  0000 L CNN
+F 1 "22pF" V 9200 9100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9138 9200 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 9100 9350 50  0001 C CNN
+F 4 "C0603C220J5GACAUTO" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 22pF ±5% 50V Ceramic Capacitor C0G, NP0 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-1411-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "8819831" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM1885C1H220JA01D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM39C220J50" H 5150 1200 50  0001 C CNN "Mouser"
+	1    9100 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 9200 9100 9100
+Wire Wire Line
+	9100 9100 9350 9100
+Connection ~ 9350 9100
+Wire Wire Line
+	9350 9500 9350 9750
+Wire Wire Line
+	9100 9750 9350 9750
+Wire Wire Line
+	9100 9500 9100 9750
+Connection ~ 9350 9750
+Wire Wire Line
+	9350 9750 9350 9800
+Wire Wire Line
+	7450 8500 7450 9100
+Connection ~ 9100 9100
+Wire Wire Line
+	8150 9750 8600 9750
+Wire Wire Line
+	8150 8300 8150 9750
+Connection ~ 9100 9750
+Wire Wire Line
+	7850 9750 8150 9750
+Wire Wire Line
+	7850 8300 7850 9750
+Connection ~ 8150 9750
+$Comp
+L Device:R R15
+U 1 1 5B08CF92
+P 8400 8150
+F 0 "R15" H 8450 8250 50  0000 L CNN
+F 1 "1M" H 8450 8000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8330 8150 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 8400 8150 50  0001 C CNN
+F 4 "RES 1 MOhms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 5 "541-1.00MHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 6 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 7 "CRCW06031M00FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 8 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 9 "71-CRCW0603-1.0M-E3" H 5150 1200 50  0001 C CNN "Mouser"
+F 10 "ERJ-3EKF1004V" H 5150 1200 50  0001 C CNN "Alternative"
+F 11 "1469746" H 5150 1200 50  0001 C CNN "Farnell"
+	1    8400 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 8000 8400 7900
+Connection ~ 8400 7900
+Wire Wire Line
+	8400 7900 9450 7900
+$Comp
+L Device:R R17
+U 1 1 5B09F518
+P 8600 8450
+F 0 "R17" H 8670 8496 50  0000 L CNN
+F 1 "10k" H 8670 8405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8530 8450 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 8600 8450 50  0001 C CNN
+F 4 "ERJ-3EKF1002V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 10 kOhms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-10.0KHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1469748" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW060310K0FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-10K-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    8600 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 8300 8600 8200
+Wire Wire Line
+	8600 8200 9450 8200
+Wire Wire Line
+	8600 8600 8600 9750
+Connection ~ 8600 9750
+Wire Wire Line
+	8600 9750 8850 9750
+Wire Wire Line
+	7450 9100 8400 9100
+Wire Wire Line
+	8400 8300 8400 9100
+Connection ~ 8400 9100
+Wire Wire Line
+	8400 9100 9100 9100
+$Comp
+L Device:C C16
+U 1 1 5B0BC2F4
+P 8850 8650
+F 0 "C16" H 8965 8696 50  0000 L CNN
+F 1 "12pF" H 8965 8605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8888 8500 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 8850 8650 50  0001 C CNN
+F 4 "C0603C120J5GACTU" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 12pF ±5% 50V Ceramic Capacitor C0G, NP0 0603" H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-1405-1-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1828907" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM1885C1H120JA01D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM39C120J50" H 5150 1200 50  0001 C CNN "Mouser"
+	1    8850 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 8500 8850 8400
+Wire Wire Line
+	8850 8400 9450 8400
+Wire Wire Line
+	8850 8800 8850 9750
+Connection ~ 8850 9750
+Wire Wire Line
+	8850 9750 9100 9750
+Wire Wire Line
+	9450 8600 9200 8600
+Wire Wire Line
+	9450 8700 9200 8700
+Text Label 9200 8600 0    50   ~ 0
+PWMH
+Text Label 9200 8700 0    50   ~ 0
+PWML
+Wire Wire Line
+	9450 8900 9200 8900
+Text Label 9200 8900 0    50   ~ 0
+RUN
+Text Label 9200 8400 0    50   ~ 0
+CS
+$Comp
+L power:Earth #PWR0104
+U 1 1 5B0EFE9F
+P 10350 9300
+F 0 "#PWR0104" H 10350 9050 50  0001 C CNN
+F 1 "Earth" H 10350 9150 50  0001 C CNN
+F 2 "" H 10350 9300 50  0001 C CNN
+F 3 "~" H 10350 9300 50  0001 C CNN
+	1    10350 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 9100 10250 9100
+Wire Wire Line
+	10350 9100 10350 9200
+Wire Wire Line
+	10250 9200 10350 9200
+$Comp
+L Device:R R16
+U 1 1 5B1106D2
+P 8600 7650
+F 0 "R16" H 8670 7696 50  0000 L CNN
+F 1 "69.8k" H 8670 7605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8530 7650 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDO0000/AOA0000C331.pdf" H 8600 7650 50  0001 C CNN
+F 4 "ERJ-3EKF6982V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 69.8 kOhms ±1% 0.25W Chip Resistor 0603" H 5150 1200 50  0001 C CNN "Description"
+F 6 "ERJ-PA3F6982V-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2562145" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "ERJ-PA3F6982V" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Panasonic" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "667-ERJ-PA3F6982V" H 5150 1200 50  0001 C CNN "Mouser"
+	1    8600 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 7800 8600 8200
+Connection ~ 8600 8200
+Wire Wire Line
+	8600 7500 8600 7400
+Text Label 8600 7400 0    50   ~ 0
+VS
+Connection ~ 12750 2100
+Text Label 13950 2300 0    50   ~ 0
+VSW
+Wire Wire Line
+	12750 4500 13300 4500
+Wire Wire Line
+	13300 2300 13300 4500
+Text Label 13950 2600 0    50   ~ 0
+VS
+Text Label 13950 2400 0    50   ~ 0
+DAUX2_2
+$Comp
+L Device:D D14
+U 1 1 5B1614CB
+P 13500 3350
+F 0 "D14" V 13300 3300 50  0000 R CNN
+F 1 "CSFMT108-HF" H 13950 3250 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 13500 3350 50  0001 C CNN
+F 3 "http://www.comchiptech.com/cms/UserFiles/CSFMT104-HF%20Thru%20CSFMT108-HF%20RevC.pdf" H 13500 3350 50  0001 C CNN
+F 4 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "Diode Standard 600V 1A SOD-123H" H 5150 1200 50  0001 C CNN "Description"
+F 6 "641-1440-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CSFMT108-HF" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Comchip Technology	" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "750-CSFMT108-HF" H 5150 1200 50  0001 C CNN "Mouser"
+	1    13500 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R35
+U 1 1 5B1619AB
+P 13500 3750
+F 0 "R35" H 13570 3796 50  0000 L CNN
+F 1 "1R" H 13570 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 13430 3750 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20008/dcrcw.pdf" H 13500 3750 50  0001 C CNN
+F 4 "ERJ-6BQF1R0V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 1 Ohms ±1% 0.125W Chip Resistor 0805" H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-1.00CCTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2616757" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW08051R00FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0805-1-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    13500 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13500 3500 13500 3600
+Wire Wire Line
+	9350 7000 9350 7800
+Wire Wire Line
+	9350 7800 9450 7800
+Text Label 9450 7000 0    50   ~ 0
+VDD
+$Comp
+L Device:C C23
+U 1 1 5B17A3F4
+P 10400 7300
+F 0 "C23" H 10400 7400 50  0000 L CNN
+F 1 "0.1uF" H 10400 7200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10438 7150 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 10400 7300 50  0001 C CNN
+F 4 "C0603C104M5RACTU" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 0.1µF ±10% 50V Ceramic Capacitor X7R 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-1519-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2408527" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM188R71H104KA93D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM39X104K50D" H 5150 1200 50  0001 C CNN "Mouser"
+	1    10400 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 7150 10400 7000
+Connection ~ 10400 7000
+Wire Wire Line
+	10400 7000 9350 7000
+Wire Wire Line
+	10400 7450 10400 7800
+Wire Wire Line
+	10400 7800 10250 7800
+$Comp
+L Device:C C25
+U 1 1 5B193B07
+P 10650 7300
+F 0 "C25" H 10650 7400 50  0000 L CNN
+F 1 "4.7uF" H 10650 7200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10688 7150 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 10650 7300 50  0001 C CNN
+F 4 "C2012X5R1H475K125AB" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 4.7µF ±10% 50V Ceramic Capacitor X5R 0805 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-10751-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2611942" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM21BR61H475KE51L" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM21BR61H475KE1L" H 5150 1200 50  0001 C CNN "Mouser"
+	1    10650 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 7150 10650 7000
+Connection ~ 10650 7000
+Wire Wire Line
+	10650 7000 10400 7000
+Wire Wire Line
+	10650 7450 10650 7800
+Wire Wire Line
+	10650 7800 10400 7800
+Connection ~ 10400 7800
+$Comp
+L Device:C C28
+U 1 1 5B1ADF78
+P 10900 7300
+F 0 "C28" H 10900 7400 50  0000 L CNN
+F 1 "1uF" H 10900 7200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10938 7150 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 10900 7300 50  0001 C CNN
+F 4 "CGA3E3X5R1H105K080AB" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 1µF ±10% 50V Ceramic Capacitor X5R 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-12330-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2672160" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRT188R61H105KE13D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRT188R61H105KE3D" H 5150 1200 50  0001 C CNN "Mouser"
+	1    10900 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 7150 10900 7000
+Connection ~ 10900 7000
+Wire Wire Line
+	10900 7000 10650 7000
+Wire Wire Line
+	10900 7450 10900 7800
+Wire Wire Line
+	10900 7800 10650 7800
+Connection ~ 10650 7800
+$Comp
+L Device:Thermistor_NTC TH1
+U 1 1 5B1C926A
+P 10650 8200
+F 0 "TH1" V 10550 8000 50  0000 C CNN
+F 1 "47k" V 10550 8400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10650 8250 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 10650 8250 50  0001 C CNN
+F 4 "ERJ-3EKF4702V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 47 kOhms ±1% 0.1W Chip Resistor 0603" H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-47.0KHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1469811" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW060347K0FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-47K-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    10650 8200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10250 8200 10500 8200
+Wire Wire Line
+	10800 8200 10900 8200
+Wire Wire Line
+	10900 8200 10900 7800
+Connection ~ 10900 7800
+$Comp
+L Device:C C29
+U 1 1 5B1E53FB
+P 11150 8000
+F 0 "C29" V 11100 7850 50  0000 C CNN
+F 1 "220pF" V 11100 8200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11188 7850 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 11150 8000 50  0001 C CNN
+F 4 "C0603C221J5GACTU" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 220pF ±5% 50V Ceramic Capacitor C0G, NP0 0603" H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-1435-1-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "8819882" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM1885C1H221JA01D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM39C221J050" H 5150 1200 50  0001 C CNN "Mouser"
+	1    11150 8000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 5B1E5ACE
+P 11400 8200
+F 0 "R23" H 11470 8246 50  0000 L CNN
+F 1 "191k" H 11470 8155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11330 8200 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 11400 8200 50  0001 C CNN
+F 4 "ERJ-3EKF1913V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 191 kOhms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-191KHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2138524" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW0603191KFKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-191K-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    11400 8200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 8000 11000 8000
+Wire Wire Line
+	11300 8000 11400 8000
+Wire Wire Line
+	11400 8000 11400 8050
+Wire Wire Line
+	11400 8350 11400 8400
+Wire Wire Line
+	11400 8400 10250 8400
+Wire Wire Line
+	11400 8000 11800 8000
+Connection ~ 11400 8000
+Text Label 11800 8000 0    50   ~ 0
+Vref
+$Comp
+L Device:C C24
+U 1 1 5B22D9DF
+P 10550 8600
+F 0 "C24" V 10450 8450 50  0000 C CNN
+F 1 "0.1uF" V 10450 8750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10588 8450 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 10550 8600 50  0001 C CNN
+F 4 "C0603C104M5RACTU" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 0.1µF ±10% 50V Ceramic Capacitor X7R 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-1519-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2408527" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM188R71H104KA93D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM39X104K50D" H 5150 1200 50  0001 C CNN "Mouser"
+	1    10550 8600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10900 8600 10900 8200
+Connection ~ 10900 8200
+Text Label 10250 8600 0    50   ~ 0
+Vref
+Wire Wire Line
+	10700 8600 10900 8600
+Wire Wire Line
+	10250 8600 10400 8600
+$Comp
+L Device:R R19
+U 1 1 5B25B57C
+P 10550 8800
+F 0 "R19" V 10450 8650 50  0000 C CNN
+F 1 "82.5k" V 10450 8950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10480 8800 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 10550 8800 50  0001 C CNN
+F 4 "ERJ-3EKF8252V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 82.5 kOhms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-82.5KHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1469840" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW060382K5FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-82.5K-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    10550 8800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10400 8800 10250 8800
+Wire Wire Line
+	10700 8800 10900 8800
+Wire Wire Line
+	10900 8800 10900 8600
+Connection ~ 10900 8600
+$Comp
+L Device:R R20
+U 1 1 5B27A36D
+P 10550 9000
+F 0 "R20" V 10450 8850 50  0000 C CNN
+F 1 "221k" V 10450 9100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10480 9000 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 10550 9000 50  0001 C CNN
+F 4 "ERJ-3EKF2213V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 221 kOhms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-221KHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1652859" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW0603221KFKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-221K-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    10550 9000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10400 9000 10250 9000
+Wire Wire Line
+	10700 9000 10900 9000
+Wire Wire Line
+	10900 9000 10900 8800
+Connection ~ 10900 8800
+Wire Wire Line
+	10350 9100 10900 9100
+Wire Wire Line
+	10900 9100 10900 9000
+Connection ~ 10350 9100
+Connection ~ 10900 9000
+$Comp
+L Device:R R24
+U 1 1 5B2A9D79
+P 11400 8750
+F 0 "R24" H 11450 8900 50  0000 L CNN
+F 1 "56.2k" H 11450 8600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11330 8750 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf" H 11400 8750 50  0001 C CNN
+F 4 "ERJ-3EKF5622V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 56.2 kOhms ±0.1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "YAG4575TR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "RT0603BRD0756K2L" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Yageo America" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "603-RT0603BRD0756K2L" H 5150 1200 50  0001 C CNN "Mouser"
+	1    11400 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11400 8600 11400 8400
+Connection ~ 11400 8400
+Wire Wire Line
+	11400 8900 11400 9100
+Wire Wire Line
+	11400 9100 10900 9100
+Connection ~ 10900 9100
+$Comp
+L Device:C C32
+U 1 1 5B2CA913
+P 11700 8750
+F 0 "C32" H 11600 8650 50  0000 C CNN
+F 1 "220pF" H 11550 8850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11738 8600 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 11700 8750 50  0001 C CNN
+F 4 "C0603C221J5GACTU" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 220pF ±5% 50V Ceramic Capacitor C0G, NP0 0603" H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-1435-1-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "8819882" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM1885C1H221JA01D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM39C221J050" H 5150 1200 50  0001 C CNN "Mouser"
+	1    11700 8750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11700 8600 11700 8400
+Wire Wire Line
+	11700 8400 11400 8400
+Wire Wire Line
+	11700 8900 11700 9100
+Wire Wire Line
+	11700 9100 11400 9100
+Connection ~ 11400 9100
+Wire Wire Line
+	10350 9300 10350 9200
+Connection ~ 10350 9200
+Text Label 10250 8000 0    50   ~ 0
+FB
+$Comp
+L Device:Q_NMOS_GSD Q7
+U 1 1 5B30F1C1
+P 12500 8800
+F 0 "Q7" H 12700 8950 50  0000 L CNN
+F 1 "2N7002KW" H 12650 8700 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 12700 8900 50  0001 C CNN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002KW.pdf" H 12500 8800 50  0001 C CNN
+F 4 "BSS138W-7-F" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "N-Channel 60V 310mA (Ta) 350mW (Ta) Surface Mount SOT-323" H 5150 1200 50  0001 C CNN "Description"
+F 6 "2N7002KWTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2454145" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "2N7002KW" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "ON Semiconductor" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "512-2N7002KW" H 5150 1200 50  0001 C CNN "Mouser"
+	1    12500 8800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 8800 12050 8800
+Text Label 12050 8800 0    50   ~ 0
+RUN
+Wire Wire Line
+	11700 9100 12600 9100
+Wire Wire Line
+	12600 9100 12600 9000
+Connection ~ 11700 9100
+$Comp
+L Device:R R32
+U 1 1 5B34252A
+P 12600 8350
+F 0 "R32" H 12670 8396 50  0000 L CNN
+F 1 "1M" H 12670 8305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12530 8350 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 12600 8350 50  0001 C CNN
+F 4 "ERJ-3EKF1004V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 1 MOhms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-1.00MHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1469746" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW06031M00FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-1.0M-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    12600 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12600 8500 12600 8600
+$Comp
+L Device:R R31
+U 1 1 5B353BB4
+P 12600 7950
+F 0 "R31" H 12670 7996 50  0000 L CNN
+F 1 "22.1k" H 12670 7905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12530 7950 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 12600 7950 50  0001 C CNN
+F 4 "ERJ-3EKF2212V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 22.1 kOhms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-22.1KHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1469780" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW060322K1FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-22.1K-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    12600 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12600 8100 12600 8150
+Connection ~ 12600 8150
+Wire Wire Line
+	12600 8150 12600 8200
+Wire Wire Line
+	12050 8150 12600 8150
+Text Label 12050 8150 0    50   ~ 0
+FB
+$Comp
+L Isolator:SFH617A-1 U7
+U 1 1 5B388C79
+P 13300 7900
+F 0 "U7" H 13450 8100 50  0000 C CNN
+F 1 "SFH617A-1" H 13300 7700 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 13100 7700 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 13300 7900 50  0001 L CNN
+F 4 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "Optoisolator Transistor Output 5300Vrms 1 Channel 4-DIP" H 5150 1200 50  0001 C CNN "Description"
+F 6 "SFH617A-1-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1612481" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "SFH617A-1" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay Semiconductor" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "782-SFH617A-1" H 5150 1200 50  0001 C CNN "Mouser"
+	1    13300 7900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	12600 7800 13000 7800
+Wire Wire Line
+	13000 8000 13000 9100
+Wire Wire Line
+	13000 9100 12600 9100
+Connection ~ 12600 9100
+$Comp
+L Device:Q_NPN_BEC Q6
+U 1 1 5B3AD219
+P 11750 7100
+F 0 "Q6" V 12078 7100 50  0000 C CNN
+F 1 "MMBTA42" V 11987 7100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11950 7200 50  0001 C CNN
+F 3 "http://www.mccsemi.com/up_pdf/MMBTA42(SOT-23).pdf" H 11750 7100 50  0001 C CNN
+F 4 "MMBTA42LT1G" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "Bipolar (BJT) Transistor NPN 300V 300mA 50MHz 300mW Surface Mount SOT-23" H 5150 1200 50  0001 C CNN "Description"
+F 6 "MMBTA42TPMSTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2370995" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "MMBTA42-TP" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Micro Commercial Co" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "833-MMBTA42-TP" H 5150 1200 50  0001 C CNN "Mouser"
+	1    11750 7100
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:D D10
+U 1 1 5B3AD5C5
+P 11200 7000
+F 0 "D10" H 11150 7100 50  0000 C CNN
+F 1 "BAV21W-7-F" H 11250 6900 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 11200 7000 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds12024.pdf" H 11200 7000 50  0001 C CNN
+F 4 "BAV21W-G3-08" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "Diode General Purpose 200V 200mA SOD123" H 5150 1200 50  0001 C CNN "Description"
+F 6 "BAV21W-FDITR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1858652" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "BAV21W-7-F" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Diodes Incorporated" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "621-BAV21W-F" H 5150 1200 50  0001 C CNN "Mouser"
+	1    11200 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D15
+U 1 1 5B3AD9D8
+P 13850 3350
+F 0 "D15" V 13650 3300 50  0000 R CNN
+F 1 "CSFMT108-HF" H 14300 3250 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 13850 3350 50  0001 C CNN
+F 3 "http://www.comchiptech.com/cms/UserFiles/CSFMT104-HF%20Thru%20CSFMT108-HF%20RevC.pdf" H 13850 3350 50  0001 C CNN
+F 4 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "Diode Standard 600V 1A SOD-123H" H 5150 1200 50  0001 C CNN "Description"
+F 6 "641-1440-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CSFMT108-HF" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Comchip Technology	" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "750-CSFMT108-HF" H 5150 1200 50  0001 C CNN "Mouser"
+	1    13850 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R36
+U 1 1 5B3AD9DF
+P 13850 3750
+F 0 "R36" H 13920 3796 50  0000 L CNN
+F 1 "1R" H 13920 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 13780 3750 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20008/dcrcw.pdf" H 13850 3750 50  0001 C CNN
+F 4 "ERJ-6BQF1R0V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 1 Ohms ±1% 0.125W Chip Resistor 0805" H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-1.00CCTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2616757" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW08051R00FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0805-1-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    13850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13850 3500 13850 3600
+Wire Wire Line
+	13850 3900 13850 6800
+Wire Wire Line
+	10900 7000 10900 6700
+Wire Wire Line
+	10900 7000 11050 7000
+Wire Wire Line
+	11350 7000 11550 7000
+$Comp
+L Device:D_Zener D11
+U 1 1 5B409DC6
+P 11750 7500
+F 0 "D11" V 11650 7550 50  0000 L CNN
+F 1 "MMSZ5248B-7-F" V 11850 7550 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 11750 7500 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 11750 7500 50  0001 C CNN
+F 4 "BZT52C18-7-F" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "Zener Diode 18V 500mW ±5% SOD-123" H 5150 1200 50  0001 C CNN "Description"
+F 6 "MMSZ5248B-FDITR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2306188" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "MMSZ5248B-7-F" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Diodes Incorporated" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "621-MMSZ5248B-F" H 5150 1200 50  0001 C CNN "Mouser"
+	1    11750 7500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11750 7350 11750 7300
+$Comp
+L power:Earth #PWR0105
+U 1 1 5B42EF80
+P 11750 7700
+F 0 "#PWR0105" H 11750 7450 50  0001 C CNN
+F 1 "Earth" H 11750 7550 50  0001 C CNN
+F 2 "" H 11750 7700 50  0001 C CNN
+F 3 "~" H 11750 7700 50  0001 C CNN
+	1    11750 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11750 7650 11750 7700
+$Comp
+L Device:R R28
+U 1 1 5B45457E
+P 12050 7300
+F 0 "R28" V 11950 7200 50  0000 C CNN
+F 1 "27k" V 11950 7450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11980 7300 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 12050 7300 50  0001 C CNN
+F 4 "ERJ-3EKF2702V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 27 kOhms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "311-27.0KHRTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "9238654" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "RC0603FR-0727KL" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Yageo America" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "603-RC0603FR-0727KL" H 5150 1200 50  0001 C CNN "Mouser"
+	1    12050 7300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11750 7300 11900 7300
+Connection ~ 11750 7300
+Wire Wire Line
+	11950 7000 12350 7000
+Wire Wire Line
+	12350 7000 12350 7300
+Wire Wire Line
+	12350 7300 12200 7300
+$Comp
+L Device:C C39
+U 1 1 5B47AB28
+P 13350 7000
+F 0 "C39" V 13250 6900 50  0000 C CNN
+F 1 "0.47uF" V 13250 7200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 13388 6850 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 13350 7000 50  0001 C CNN
+F 4 "08051C474K4Z2A" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 0.47µF ±10% 100V Ceramic Capacitor X7R 0805" H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-3326-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2611948" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM21BR72A474KA73L" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM21BR72A474KA73" H 5150 1200 50  0001 C CNN "Mouser"
+	1    13350 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C40
+U 1 1 5B4A1B8D
+P 13350 7300
+F 0 "C40" V 13250 7200 50  0000 C CNN
+F 1 "0.47uF" V 13250 7500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 13388 7150 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 13350 7300 50  0001 C CNN
+F 4 "08051C474K4Z2A" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 0.47µF ±10% 100V Ceramic Capacitor X7R 0805" H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-3326-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2611948" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM21BR72A474KA73L" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM21BR72A474KA73" H 5150 1200 50  0001 C CNN "Mouser"
+	1    13350 7300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10900 6700 13500 6700
+Wire Wire Line
+	13500 3900 13500 6700
+$Comp
+L power:Earth #PWR0106
+U 1 1 5B504180
+P 14100 7350
+F 0 "#PWR0106" H 14100 7100 50  0001 C CNN
+F 1 "Earth" H 14100 7200 50  0001 C CNN
+F 2 "" H 14100 7350 50  0001 C CNN
+F 3 "~" H 14100 7350 50  0001 C CNN
+	1    14100 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12350 7000 12350 6800
+Wire Wire Line
+	12350 6800 13850 6800
+Connection ~ 12350 7000
+Wire Wire Line
+	12350 7000 13200 7000
+Wire Wire Line
+	12350 7300 13200 7300
+Connection ~ 12350 7300
+Wire Wire Line
+	13500 7000 14100 7000
+Connection ~ 14100 7000
+Wire Wire Line
+	14100 7000 14100 7300
+Wire Wire Line
+	13500 7300 14100 7300
+Wire Wire Line
+	14100 7350 14100 7300
+Connection ~ 14100 7300
+$Comp
+L Device:R R42
+U 1 1 5B5CE295
+P 14750 7100
+F 0 "R42" H 14820 7146 50  0000 L CNN
+F 1 "562R" H 14820 7055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14680 7100 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 14750 7100 50  0001 C CNN
+F 4 "ERJ-3EKF5620V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 562 Ohms ±1% 0.1W Chip Resistor 0603" H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-562HTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1652891" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW0603562RFKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-562-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    14750 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C42
+U 1 1 5B5CE48D
+P 14750 7500
+F 0 "C42" H 14865 7546 50  0000 L CNN
+F 1 "4700pF" H 14865 7455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 14788 7350 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A472KA01-02.pdf" H 14750 7500 50  0001 C CNN
+F 4 "C0603C472K3RACTU" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 4700pF ±10% 100V Ceramic Capacitor X7R 0603" H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-10739-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2688527" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM188R72A472KA01D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM188R72A472KA1D" H 5150 1200 50  0001 C CNN "Mouser"
+	1    14750 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14750 7350 14750 7250
+$Comp
+L Device:R R43
+U 1 1 5B5E2D20
+P 14750 7900
+F 0 "R43" H 14820 7946 50  0000 L CNN
+F 1 "34k" H 14820 7855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14680 7900 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 14750 7900 50  0001 C CNN
+F 4 "ERJ-3EKF3402V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 34 kOhms ±1% 0.1W Chip Resistor 0603" H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-34.0KHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2138456" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW060334K0FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-34K-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    14750 7900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14750 7750 14750 7700
+$Comp
+L Device:R R40
+U 1 1 5B60BE2D
+P 14500 7250
+F 0 "R40" H 14570 7296 50  0000 L CNN
+F 1 "11k" H 14570 7205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14430 7250 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 14500 7250 50  0001 C CNN
+F 4 "ERJ-3EKF1102V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 11 kOhms ±1% 0.1W Chip Resistor 0603" H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-11.0KHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2138424" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW060311K0FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-11K-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    14500 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14500 7100 14500 6900
+Wire Wire Line
+	14500 6900 14750 6900
+Wire Wire Line
+	14750 6900 14750 6950
+Wire Wire Line
+	14500 7400 14500 7700
+Wire Wire Line
+	14500 7700 14750 7700
+Connection ~ 14750 7700
+Wire Wire Line
+	14750 7700 14750 7650
+Wire Wire Line
+	13600 7800 14500 7800
+Wire Wire Line
+	14500 7800 14500 7700
+Connection ~ 14500 7700
+Wire Wire Line
+	13600 8000 14500 8000
+Wire Wire Line
+	14500 8000 14500 8100
+Wire Wire Line
+	14500 8100 14750 8100
+Wire Wire Line
+	14750 8100 14750 8050
+$Comp
+L Device:R R44
+U 1 1 5B6B5F04
+P 15200 8100
+F 0 "R44" V 15100 8000 50  0000 C CNN
+F 1 "60.4k" V 15100 8200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15130 8100 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 15200 8100 50  0001 C CNN
+F 4 "ERJ-3EKF6042V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 60.4 kOhms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-60.4KHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2138476" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW060360K4FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-60.4K-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    15200 8100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14750 8100 15000 8100
+Connection ~ 14750 8100
+$Comp
+L Device:C C44
+U 1 1 5B6CC440
+P 15600 8100
+F 0 "C44" V 15500 8000 50  0000 C CNN
+F 1 "0.01uF" V 15500 8300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 15638 7950 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 15600 8100 50  0001 C CNN
+F 4 "GCM188R71H103KA37D" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 " CAP 0.01µF ±10% 50V Ceramic Capacitor X7R 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-1512-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2462748" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM188R71H103KA01D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM39X103K50D" H 5150 1200 50  0001 C CNN "Mouser"
+	1    15600 8100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15350 8100 15450 8100
+$Comp
+L Device:C C43
+U 1 1 5B6E2B1D
+P 15400 8350
+F 0 "C43" V 15300 8250 50  0000 C CNN
+F 1 "3.3pF" V 15300 8450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 15438 8200 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 15400 8350 50  0001 C CNN
+F 4 "C0603C339C5GACTU" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 3.3pF ±0.25pF 50V Ceramic Capacitor C0G, NP0 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-10717-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "2434647" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GRM1885C1H3R3CA01D" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GRM1885C1H3R3CA1D" H 5150 1200 50  0001 C CNN "Mouser"
+	1    15400 8350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15250 8350 15000 8350
+Wire Wire Line
+	15000 8350 15000 8100
+Connection ~ 15000 8100
+Wire Wire Line
+	15000 8100 15050 8100
+Wire Wire Line
+	15950 8100 15950 8350
+Wire Wire Line
+	15550 8350 15650 8350
+Wire Wire Line
+	15750 8100 15950 8100
+Connection ~ 15950 8100
+$Comp
+L Device:R R46
+U 1 1 5B73DF7F
+P 15950 7450
+F 0 "R46" H 16020 7496 50  0000 L CNN
+F 1 "150k" H 16020 7405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15880 7450 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 15950 7450 50  0001 C CNN
+F 4 "ERJ-3EKF1503V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 150 kOhms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-150KHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1469759" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW0603150KFKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-150K-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    15950 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15950 7600 15950 8100
+Wire Wire Line
+	15950 6900 14750 6900
+Connection ~ 14750 6900
+Wire Wire Line
+	15950 6900 15950 7300
+$Comp
+L Device:R R45
+U 1 1 5B78316F
+P 15950 6650
+F 0 "R45" H 16020 6696 50  0000 L CNN
+F 1 "10R" H 16020 6605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15880 6650 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28773/crcwce3.pdf" H 15950 6650 50  0001 C CNN
+F 4 "ERJ-3EKF10R0V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 10 Ohms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-3952-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1469751" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW060310R0FKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW060310R0FKEAC" H 5150 1200 50  0001 C CNN "Mouser"
+	1    15950 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15950 6800 15950 6900
+Connection ~ 15950 6900
+Wire Wire Line
+	15950 6500 15950 6350
+Wire Wire Line
+	15950 8100 16200 8100
+$Comp
+L Device:R R47
+U 1 1 5B7C94CE
+P 15950 8600
+F 0 "R47" H 16020 8646 50  0000 L CNN
+F 1 "150k" H 16020 8555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15880 8600 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 15950 8600 50  0001 C CNN
+F 4 "ERJ-3EKF1503V" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "RES 150 kOhms ±1% 0.1W Chip Resistor 0603 " H 5150 1200 50  0001 C CNN "Description"
+F 6 "541-150KHTR-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1469759" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "CRCW0603150KFKEA" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Vishay-Dale" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "71-CRCW0603-150K-E3" H 5150 1200 50  0001 C CNN "Mouser"
+	1    15950 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15950 8450 15950 8350
+Connection ~ 15950 8350
+$Comp
+L Device:C C41
+U 1 1 5B7E0F01
+P 13850 9100
+F 0 "C41" V 13750 8950 50  0000 C CNN
+F 1 "2200pF/250V" V 13750 9450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_2220_5650Metric" H 13888 8950 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GA355QR7GF222KW01-01.pdf" H 13850 9100 50  0001 C CNN
+F 4 "VJ2220Y222KXUSTX1" H 5150 1200 50  0001 C CNN "Alternative"
+F 5 "CAP 2200pF ±10% 250V Ceramic Capacitor X7R 2220" H 5150 1200 50  0001 C CNN "Description"
+F 6 "490-3480-2-ND" H 5150 1200 50  0001 C CNN "Digikey"
+F 7 "1812604" H 5150 1200 50  0001 C CNN "Farnell"
+F 8 "none" H 5150 1200 50  0001 C CNN "Feed"
+F 9 "GA355QR7GF222KW01L" H 5150 1200 50  0001 C CNN "MPN"
+F 10 "Murata" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 11 "81-GA355QR7GF222KL" H 5150 1200 50  0001 C CNN "Mouser"
+	1    13850 9100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0107
+U 1 1 5B7E1617
+P 13600 9200
+F 0 "#PWR0107" H 13600 8950 50  0001 C CNN
+F 1 "Earth" H 13600 9050 50  0001 C CNN
+F 2 "" H 13600 9200 50  0001 C CNN
+F 3 "~" H 13600 9200 50  0001 C CNN
+	1    13600 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13600 9200 13600 9100
+Wire Wire Line
+	13600 9100 13700 9100
+$Comp
+L power:GND #PWR0108
+U 1 1 5B81112F
+P 14100 9200
+F 0 "#PWR0108" H 14100 8950 50  0001 C CNN
+F 1 "GND" H 14105 9027 50  0000 C CNN
+F 2 "" H 14100 9200 50  0001 C CNN
+F 3 "" H 14100 9200 50  0001 C CNN
+	1    14100 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 9100 14100 9100
+Wire Wire Line
+	14100 9100 14100 9200
+Wire Wire Line
+	14750 8850 15950 8850
+Wire Wire Line
+	15950 8850 15950 8750
+$Comp
+L power:GND #PWR0109
+U 1 1 5B87AF67
+P 15950 8950
+F 0 "#PWR0109" H 15950 8700 50  0001 C CNN
+F 1 "GND" H 15955 8777 50  0000 C CNN
+F 2 "" H 15950 8950 50  0001 C CNN
+F 3 "" H 15950 8950 50  0001 C CNN
+	1    15950 8950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15950 8950 15950 8850
+Connection ~ 15950 8850
+Wire Wire Line
+	14750 8700 14750 8850
+Wire Wire Line
+	14750 8100 14750 8500
+Wire Wire Line
+	14850 8600 15650 8600
+Wire Wire Line
+	15650 8600 15650 8350
+Connection ~ 15650 8350
+Wire Wire Line
+	15650 8350 15950 8350
+Text Label 9350 3600 0    50   ~ 0
+INH
+$Comp
+L custom-lib:RM8 T1
+U 1 1 5AEB46BC
+P 14450 2050
+F 0 "T1" H 14450 2100 50  0000 C CNN
+F 1 "RM8" H 14500 1200 50  0000 C CNN
+F 2 "" H 14450 2000 50  0001 C CNN
+F 3 "" H 14450 2000 50  0001 C CNN
+F 4 "RM8 Transformer" H 5150 1200 50  0001 C CNN "Description"
+F 5 "Wurth Elektronik" H 5150 1200 50  0001 C CNN "Manufacturer"
+F 6 "750343793" H 5150 1200 50  0001 C CNN "MPN"
+F 7 "none" H 5150 1200 50  0001 C CNN "Mouser"
+F 8 "none" H 5150 1200 50  0001 C CNN "Farnell"
+F 9 "none" H 5150 1200 50  0001 C CNN "Digikey"
+F 10 "none" H 5150 1200 50  0001 C CNN "Alternative"
+F 11 "none" H 5150 1200 50  0001 C CNN "Feed"
+	1    14450 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12750 2100 14350 2100
+Wire Wire Line
+	13300 2300 14350 2300
+Wire Wire Line
+	14350 2400 13850 2400
+Wire Wire Line
+	13850 2400 13850 3200
+Wire Wire Line
+	14350 2600 13500 2600
+Wire Wire Line
+	13500 2600 13500 3200
+Wire Wire Line
+	14350 2800 14100 2800
+Wire Wire Line
+	14100 2800 14100 7000
+Wire Wire Line
+	14650 2250 14800 2250
+Wire Wire Line
+	14650 2650 14800 2650
+Text HLabel 14800 2250 2    50   Input ~ 0
+S
+Text HLabel 14800 2650 2    50   Input ~ 0
+F
+Text HLabel 15950 6350 1    50   Input ~ 0
+Vo
+Text GLabel 16200 8100 2    50   Input ~ 0
+CTL
+$Comp
+L custom-lib:ATL431 U8
+U 1 1 5AF77C85
+P 14750 8600
+F 0 "U8" V 14796 8530 50  0000 R CNN
+F 1 "ATL431" V 14705 8530 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 14750 8600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/atl431.pdf" H 14750 8600 50  0001 C CNN
+F 4 "Shunt Voltage Reference IC 36V ±0.5% 100mA SOT-23-3" H 3050 400 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 3050 400 50  0001 C CNN "Manufacturer"
+F 6 "ATL431BQDBZR" H 3050 400 50  0001 C CNN "MPN"
+F 7 "595-ATL431BQDBZR" H 3050 400 50  0001 C CNN "Mouser"
+F 8 "none" H 3050 400 50  0001 C CNN "Farnell"
+F 9 "296-44371-2-ND" H 3050 400 50  0001 C CNN "Digikey"
+F 10 "TL431BSA-7" H 3050 400 50  0001 C CNN "Alternative"
+F 11 "none" H 3050 400 50  0001 C CNN "Feed"
+	1    14750 8600
+	0    1    -1   0   
+$EndComp
+$Comp
+L custom-lib:AN34092B U9
+U 1 1 5AFF7C20
+P 16950 4100
+F 0 "U9" H 17050 4150 50  0000 C CNN
+F 1 "AN34092B" H 17750 4150 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-16-1EP_4x4mm_P0.65mm_EP2.7x2.7mm" H 16900 4050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/FLY000070_EN-1218957.pdf" H 17000 4150 50  0001 C CNN
+F 4 "Single Channel GaN-Tr High Speed Gate Driver" H 3250 950 50  0001 C CNN "Description"
+F 5 "Panasonic" H 17300 4450 50  0001 C CNN "Manufacturer"
+F 6 "AN34092B" H 17100 4250 50  0001 C CNN "MPN"
+F 7 "667-AN34092B" H 17200 4350 50  0001 C CNN "Mouser"
+F 8 "none" H 17500 4650 50  0001 C CNN "Farnell"
+F 9 "none" H 17400 4550 50  0001 C CNN "Digikey"
+F 10 "none" H 3250 950 50  0001 C CNN "Alternative"
+F 11 "none" H 17850 4950 50  0001 C CNN "Feed"
+	1    16950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom-lib:PGA26E07 Q8
+U 1 1 5AFF95AD
+P 17450 3300
+F 0 "Q8" H 17541 3346 50  0000 L CNN
+F 1 "PGA26E07" H 17541 3255 50  0000 L CNN
+F 2 "custom-footprint:PANASONIC_PGA26E07BA" H 17450 3300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/pga26e07ba-product-standards-1112741.pdf" H 17450 3300 50  0001 C CNN
+F 4 "MOSFET 600VDC 70mOhm X-GaN" H 3250 950 50  0001 C CNN "Description"
+F 5 "Panasonic" H 3250 950 50  0001 C CNN "Manufacturer"
+F 6 "PGA26E07BA" H 3250 950 50  0001 C CNN "MPN"
+F 7 "667-PGA26E07BA" H 3250 950 50  0001 C CNN "Mouser"
+F 8 "none" H 3250 950 50  0001 C CNN "Farnell"
+F 9 "none" H 3250 950 50  0001 C CNN "Digikey"
+F 10 "none" H 3250 950 50  0001 C CNN "Alternative"
+F 11 "none" H 3250 950 50  0001 C CNN "Feed"
+	1    17450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J1
+U 1 1 5AF64B89
+P 8600 2450
+F 0 "J1" H 8700 2400 50  0000 C CNN
+F 1 "HOLE" H 8550 2500 50  0000 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 8600 2450 50  0001 C CNN
+F 3 "~" H 8600 2450 50  0001 C CNN
+F 4 "" H 3250 950 50  0001 C CNN "Alternative"
+F 5 "" H 3250 950 50  0001 C CNN "Description"
+F 6 "" H 3250 950 50  0001 C CNN "Digikey"
+F 7 "" H 3250 950 50  0001 C CNN "Farnell"
+F 8 "" H 3250 950 50  0001 C CNN "Feed"
+F 9 "" H 3250 950 50  0001 C CNN "MPN"
+F 10 "" H 3250 950 50  0001 C CNN "Manufacturer"
+F 11 "" H 3250 950 50  0001 C CNN "Mouser"
+	1    8600 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J2
+U 1 1 5AF64D4D
+P 8600 2650
+F 0 "J2" H 8700 2650 50  0000 C CNN
+F 1 "HOLE" H 8550 2700 50  0000 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 8600 2650 50  0001 C CNN
+F 3 "~" H 8600 2650 50  0001 C CNN
+F 4 "" H 3250 950 50  0001 C CNN "Alternative"
+F 5 "" H 3250 950 50  0001 C CNN "Description"
+F 6 "" H 3250 950 50  0001 C CNN "Digikey"
+F 7 "" H 3250 950 50  0001 C CNN "Farnell"
+F 8 "" H 3250 950 50  0001 C CNN "Feed"
+F 9 "" H 3250 950 50  0001 C CNN "MPN"
+F 10 "" H 3250 950 50  0001 C CNN "Manufacturer"
+F 11 "" H 3250 950 50  0001 C CNN "Mouser"
+	1    8600 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5AF6DA24
+P 11500 2100
+F 0 "#FLG0101" H 11500 2175 50  0001 C CNN
+F 1 "PWR_FLAG" H 11500 2274 50  0000 C CNN
+F 2 "" H 11500 2100 50  0001 C CNN
+F 3 "~" H 11500 2100 50  0001 C CNN
+	1    11500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5AF86CCF
+P 11850 2850
+F 0 "#FLG0102" H 11850 2925 50  0001 C CNN
+F 1 "PWR_FLAG" V 11950 2750 50  0000 L CNN
+F 2 "" H 11850 2850 50  0001 C CNN
+F 3 "~" H 11850 2850 50  0001 C CNN
+	1    11850 2850
+	0    1    1    0   
+$EndComp
+Connection ~ 11850 2850
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5AFA0CDA
+P 11300 4500
+F 0 "#FLG0103" H 11300 4575 50  0001 C CNN
+F 1 "PWR_FLAG" H 11300 4674 50  0000 C CNN
+F 2 "" H 11300 4500 50  0001 C CNN
+F 3 "~" H 11300 4500 50  0001 C CNN
+	1    11300 4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 11300 4500
+Wire Wire Line
+	11300 4500 10850 4500
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5AFD5323
+P 9350 7000
+F 0 "#FLG0104" H 9350 7075 50  0001 C CNN
+F 1 "PWR_FLAG" H 9350 7174 50  0000 C CNN
+F 2 "" H 9350 7000 50  0001 C CNN
+F 3 "~" H 9350 7000 50  0001 C CNN
+	1    9350 7000
+	1    0    0    -1  
+$EndComp
+Connection ~ 9350 7000
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5AFEF282
+P 10300 4950
+F 0 "#FLG0105" H 10300 5025 50  0001 C CNN
+F 1 "PWR_FLAG" H 10300 5124 50  0000 C CNN
+F 2 "" H 10300 4950 50  0001 C CNN
+F 3 "~" H 10300 4950 50  0001 C CNN
+	1    10300 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0106
+U 1 1 5B0087C7
+P 11550 5350
+F 0 "#FLG0106" H 11550 5425 50  0001 C CNN
+F 1 "PWR_FLAG" H 11550 5524 50  0000 C CNN
+F 2 "" H 11550 5350 50  0001 C CNN
+F 3 "~" H 11550 5350 50  0001 C CNN
+	1    11550 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 11550 5350
+Wire Wire Line
+	11550 5350 11950 5350
+$Comp
+L power:PWR_FLAG #FLG0107
+U 1 1 5B022380
+P 11350 3400
+F 0 "#FLG0107" H 11350 3475 50  0001 C CNN
+F 1 "PWR_FLAG" H 11350 3574 50  0000 C CNN
+F 2 "" H 11350 3400 50  0001 C CNN
+F 3 "~" H 11350 3400 50  0001 C CNN
+	1    11350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0108
+U 1 1 5B03BB6B
+P 11600 3800
+F 0 "#FLG0108" H 11600 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 11600 3974 50  0000 C CNN
+F 2 "" H 11600 3800 50  0001 C CNN
+F 3 "~" H 11600 3800 50  0001 C CNN
+	1    11600 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 11600 3800
+Wire Wire Line
+	11600 3800 11950 3800
+$Comp
+L power:PWR_FLAG #FLG0109
+U 1 1 5B055F16
+P 8350 3850
+F 0 "#FLG0109" H 8350 3925 50  0001 C CNN
+F 1 "PWR_FLAG" H 8300 4000 50  0000 L CNN
+F 2 "" H 8350 3850 50  0001 C CNN
+F 3 "~" H 8350 3850 50  0001 C CNN
+	1    8350 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0110
+U 1 1 5B06F9AB
+P 9600 3850
+F 0 "#FLG0110" H 9600 3925 50  0001 C CNN
+F 1 "PWR_FLAG" H 9500 4050 50  0000 L CNN
+F 2 "" H 9600 3850 50  0001 C CNN
+F 3 "~" H 9600 3850 50  0001 C CNN
+	1    9600 3850
+	0    1    1    0   
+$EndComp
+NoConn ~ 16850 4200
+NoConn ~ 16850 4400
+NoConn ~ 16850 4600
+NoConn ~ 16850 4700
+NoConn ~ 16850 4800
+NoConn ~ 16850 4900
+NoConn ~ 17150 5100
+NoConn ~ 17250 5100
+NoConn ~ 17350 5100
+NoConn ~ 17550 5100
+NoConn ~ 17650 5100
+NoConn ~ 17750 5100
+NoConn ~ 17950 4600
+NoConn ~ 17950 4500
+NoConn ~ 17950 4400
+NoConn ~ 17550 4000
+NoConn ~ 17350 4000
+NoConn ~ 17150 3400
+NoConn ~ 17150 3300
+NoConn ~ 17450 3100
+NoConn ~ 17450 3500
+Wire Wire Line
+	9900 2450 10500 2450
+Connection ~ 9250 4350
+$Comp
+L custom-lib:TPS25740B U6
+U 1 1 5AE5C7AA
+P 13100 12600
+F 0 "U6" H 13150 12650 50  0000 C CNN
+F 1 "TPS25740B" H 13300 10750 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 13800 12500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps25740b.pdf" H 14200 12900 50  0001 C CNN
+F 4 "USB Type-C and USB PD Source Controller" H 14300 13600 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 13500 12800 50  0001 C CNN "Manufacturer"
+F 6 "TPS25740BRGER" H 13700 13000 50  0001 C CNN "MPN"
+F 7 "595-TPS25740BRGER" H 13900 13200 50  0001 C CNN "Mouser"
+F 8 "none" H 14000 13300 50  0001 C CNN "Farnell"
+F 9 "TPS25740BRGER-ND" H 13800 13100 50  0001 C CNN "Digikey"
+F 10 "none" H 14100 13400 50  0001 C CNN "Alternative"
+F 11 "none" H 14200 13500 50  0001 C CNN "Feed"
+	1    13100 12600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C37
+U 1 1 5AE5C7B9
+P 12450 12800
+F 0 "C37" V 12500 12650 50  0000 C CNN
+F 1 "0.22uF" V 12400 12500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12488 12650 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 12450 12800 50  0001 C CNN
+F 4 "C1608X7R1H224K080AE" H 5400 8150 50  0001 C CNN "Alternative"
+F 5 "CAP 0.22µF ±10% 10V Ceramic Capacitor X7R 0603 " H 5400 8150 50  0001 C CNN "Description"
+F 6 "none" H 5400 8150 50  0001 C CNN "Feed"
+F 7 "GRM188R71A224KA01D" H 5400 8150 50  0001 C CNN "MPN"
+F 8 "Murata" H 5400 8150 50  0001 C CNN "Manufacturer"
+F 9 "490-1535-2-ND" H 5400 8150 50  0001 C CNN "Digikey"
+F 10 "1828889" H 5400 8150 50  0001 C CNN "Farnell"
+F 11 "81-GRM39X224K10D" H 5400 8150 50  0001 C CNN "Mouser"
+	1    12450 12800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C35
+U 1 1 5AE5C7C8
+P 12150 12900
+F 0 "C35" V 12200 12750 50  0000 C CNN
+F 1 "0.1uF" V 12200 13150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12188 12750 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 12150 12900 50  0001 C CNN
+F 4 "C0603C104M5RACTU" H 5400 8150 50  0001 C CNN "Alternative"
+F 5 "CAP 0.1µF ±10% 50V Ceramic Capacitor X7R 0603 " H 5400 8150 50  0001 C CNN "Description"
+F 6 "none" H 5400 8150 50  0001 C CNN "Feed"
+F 7 "GRM188R71H104KA93D" H 5400 8150 50  0001 C CNN "MPN"
+F 8 "Murata" H 5400 8150 50  0001 C CNN "Manufacturer"
+F 9 "490-1519-2-ND" H 5400 8150 50  0001 C CNN "Digikey"
+F 10 "2408527" H 5400 8150 50  0001 C CNN "Farnell"
+F 11 "81-GRM39X104K50D" H 5400 8150 50  0001 C CNN "Mouser"
+	1    12150 12900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C34
+U 1 1 5AE5C7D7
+P 11850 13000
+F 0 "C34" V 11900 12900 50  0000 C CNN
+F 1 "0.1uF" V 11900 13250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11888 12850 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 11850 13000 50  0001 C CNN
+F 4 "C0603C104M5RACTU" H 5400 8150 50  0001 C CNN "Alternative"
+F 5 "CAP 0.1µF ±10% 50V Ceramic Capacitor X7R 0603 " H 5400 8150 50  0001 C CNN "Description"
+F 6 "none" H 5400 8150 50  0001 C CNN "Feed"
+F 7 "GRM188R71H104KA93D" H 5400 8150 50  0001 C CNN "MPN"
+F 8 "Murata" H 5400 8150 50  0001 C CNN "Manufacturer"
+F 9 "490-1519-2-ND" H 5400 8150 50  0001 C CNN "Digikey"
+F 10 "2408527" H 5400 8150 50  0001 C CNN "Farnell"
+F 11 "81-GRM39X104K50D" H 5400 8150 50  0001 C CNN "Mouser"
+	1    11850 13000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C31
+U 1 1 5AE5C7E6
+P 11550 13100
+F 0 "C31" V 11600 13000 50  0000 C CNN
+F 1 "0.1uF" V 11600 13350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11588 12950 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 11550 13100 50  0001 C CNN
+F 4 "C0603C104M5RACTU" H 5400 8150 50  0001 C CNN "Alternative"
+F 5 "CAP 0.1µF ±10% 50V Ceramic Capacitor X7R 0603 " H 5400 8150 50  0001 C CNN "Description"
+F 6 "none" H 5400 8150 50  0001 C CNN "Feed"
+F 7 "GRM188R71H104KA93D" H 5400 8150 50  0001 C CNN "MPN"
+F 8 "Murata" H 5400 8150 50  0001 C CNN "Manufacturer"
+F 9 "490-1519-2-ND" H 5400 8150 50  0001 C CNN "Digikey"
+F 10 "2408527" H 5400 8150 50  0001 C CNN "Farnell"
+F 11 "81-GRM39X104K50D" H 5400 8150 50  0001 C CNN "Mouser"
+	1    11550 13100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13000 13400 12650 13400
+Wire Wire Line
+	13000 13700 12650 13700
+Wire Wire Line
+	12600 12800 13000 12800
+Text Label 12600 12800 0    50   ~ 0
+DVDD
+Wire Wire Line
+	13000 12700 12850 12700
+Text Label 12600 12700 0    50   ~ 0
+VBUS
+Wire Wire Line
+	12300 12900 13000 12900
+Wire Wire Line
+	12000 13000 13000 13000
+Wire Wire Line
+	11700 13100 13000 13100
+Wire Wire Line
+	11300 12800 11300 12900
+Wire Wire Line
+	11300 13100 11400 13100
+Connection ~ 11300 13000
+Wire Wire Line
+	11300 13000 11300 13100
+Connection ~ 11300 12900
+Wire Wire Line
+	11300 12900 11300 13000
+Wire Wire Line
+	11300 12800 12300 12800
+Wire Wire Line
+	11300 12900 12000 12900
+Wire Wire Line
+	11300 13000 11700 13000
+Wire Wire Line
+	13000 13200 11300 13200
+Wire Wire Line
+	11300 13200 11300 13100
+Connection ~ 11300 13100
+$Comp
+L Device:R R29
+U 1 1 5AE5C80B
+P 12100 13850
+F 0 "R29" V 12000 13750 50  0000 C CNN
+F 1 "61.9k" V 12000 14000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12030 13850 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 12100 13850 50  0001 C CNN
+F 4 "ERJ-3EKF6192V" H 5400 8150 50  0001 C CNN "Alternative"
+F 5 "RES 61.9 kOhms ±1% 0.1W Chip Resistor 0603 " H 5400 8150 50  0001 C CNN "Description"
+F 6 "none" H 5400 8150 50  0001 C CNN "Feed"
+F 7 "CRCW060361K9FKEA" H 5400 8150 50  0001 C CNN "MPN"
+F 8 "Vishay-Dale" H 5400 8150 50  0001 C CNN "Manufacturer"
+F 9 "541-61.9KHTR-ND" H 5400 8150 50  0001 C CNN "Digikey"
+F 10 "2138477" H 5400 8150 50  0001 C CNN "Farnell"
+F 11 "71-CRCW0603-61.9K-E3" H 5400 8150 50  0001 C CNN "Mouser"
+	1    12100 13850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 5AE5C81A
+P 11650 13850
+F 0 "R26" V 11550 13750 50  0000 C CNN
+F 1 "0R" V 11550 13950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11580 13850 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 11650 13850 50  0001 C CNN
+F 4 "ERJ-3GEY0R00V" H 5400 8150 50  0001 C CNN "Alternative"
+F 5 "RES 0 Ohms Jumper 0.1W Chip Resistor 0603 " H 5400 8150 50  0001 C CNN "Description"
+F 6 "none" H 5400 8150 50  0001 C CNN "Feed"
+F 7 "CRCW06030000Z0EA" H 5400 8150 50  0001 C CNN "MPN"
+F 8 "Vishay-Dale" H 5400 8150 50  0001 C CNN "Manufacturer"
+F 9 "541-0.0GTR-ND" H 5400 8150 50  0001 C CNN "Digikey"
+F 10 "1469739" H 5400 8150 50  0001 C CNN "Farnell"
+F 11 "71-CRCW0603-0-E3" H 5400 8150 50  0001 C CNN "Mouser"
+	1    11650 13850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11950 13850 11800 13850
+Wire Wire Line
+	11500 13850 11300 13850
+$Comp
+L Device:R R30
+U 1 1 5AE5C82B
+P 12100 14050
+F 0 "R30" V 12000 13950 50  0000 C CNN
+F 1 "90.9k" V 12000 14200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12030 14050 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 12100 14050 50  0001 C CNN
+F 4 "ERJ-3EKF9092V" H 5400 8150 50  0001 C CNN "Alternative"
+F 5 "RES 90.9 kOhms ±1% 0.1W Chip Resistor 0603 " H 5400 8150 50  0001 C CNN "Description"
+F 6 "none" H 5400 8150 50  0001 C CNN "Feed"
+F 7 "CRCW060390K9FKEA" H 5400 8150 50  0001 C CNN "MPN"
+F 8 "Vishay-Dale" H 5400 8150 50  0001 C CNN "Manufacturer"
+F 9 "541-90.9KHTR-ND" H 5400 8150 50  0001 C CNN "Digikey"
+F 10 "2138493" H 5400 8150 50  0001 C CNN "Farnell"
+F 11 "71-CRCW0603-90.9K-E3" H 5400 8150 50  0001 C CNN "Mouser"
+	1    12100 14050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R27
+U 1 1 5AE5C83A
+P 11650 14050
+F 0 "R27" V 11550 13950 50  0000 C CNN
+F 1 "2k" V 11550 14150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11580 14050 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28773/crcwce3.pdf" H 11650 14050 50  0001 C CNN
+F 4 "ERJ-3EKF2001V" H 5400 8150 50  0001 C CNN "Alternative"
+F 5 "RES 2 kOhms ±1% 0.1W Chip Resistor 0603 " H 5400 8150 50  0001 C CNN "Description"
+F 6 "none" H 5400 8150 50  0001 C CNN "Feed"
+F 7 "CRCW06032K00FKEA" H 5400 8150 50  0001 C CNN "MPN"
+F 8 "Vishay-Dale" H 5400 8150 50  0001 C CNN "Manufacturer"
+F 9 "541-2.00KHTR-ND" H 5400 8150 50  0001 C CNN "Digikey"
+F 10 "1469764" H 5400 8150 50  0001 C CNN "Farnell"
+F 11 "71-CRCW0603-2.0K-E3" H 5400 8150 50  0001 C CNN "Mouser"
+	1    11650 14050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11800 14050 11950 14050
+Wire Wire Line
+	11300 14050 11500 14050
+Text Label 11300 13850 0    50   ~ 0
+CTL
+Text Label 11300 14050 0    50   ~ 0
+CTL
+Wire Wire Line
+	12500 13850 12500 13900
+Wire Wire Line
+	12500 13900 13000 13900
+Wire Wire Line
+	12250 13850 12500 13850
+Wire Wire Line
+	12500 14050 12500 14000
+Wire Wire Line
+	12500 14000 13000 14000
+Wire Wire Line
+	12250 14050 12500 14050
+Text Label 14150 12700 2    50   ~ 0
+Vaux
+Text Label 14150 12800 2    50   ~ 0
+DVDD
+$Comp
+L power:GND #PWR0110
+U 1 1 5AE5C84D
+P 13900 14400
+F 0 "#PWR0110" H 13900 14150 50  0001 C CNN
+F 1 "GND" H 13905 14227 50  0000 C CNN
+F 2 "" H 13900 14400 50  0001 C CNN
+F 3 "" H 13900 14400 50  0001 C CNN
+	1    13900 14400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13800 14300 13900 14300
+Wire Wire Line
+	13900 14300 13900 14400
+Wire Wire Line
+	13800 14200 13900 14200
+Wire Wire Line
+	13900 14200 13900 14300
+Connection ~ 13900 14300
+Wire Wire Line
+	13800 14100 13900 14100
+Wire Wire Line
+	13900 14100 13900 14200
+Connection ~ 13900 14200
+$Comp
+L Device:R R39
+U 1 1 5AE5C863
+P 14100 13800
+F 0 "R39" V 14000 13700 50  0000 C CNN
+F 1 "100R" V 14000 13950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14030 13800 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 14100 13800 50  0001 C CNN
+F 4 "ERJ-3EKF1000V" H 5400 8150 50  0001 C CNN "Alternative"
+F 5 "RES 100 Ohms ±1% 0.1W Chip Resistor 0603 " H 5400 8150 50  0001 C CNN "Description"
+F 6 "none" H 5400 8150 50  0001 C CNN "Feed"
+F 7 "CRCW0603100RFKEA" H 5400 8150 50  0001 C CNN "MPN"
+F 8 "Vishay-Dale" H 5400 8150 50  0001 C CNN "Manufacturer"
+F 9 "541-3951-2-ND" H 5400 8150 50  0001 C CNN "Digikey"
+F 10 "1469752" H 5400 8150 50  0001 C CNN "Farnell"
+F 11 "71-CRCW0603-100-E3" H 5400 8150 50  0001 C CNN "Mouser"
+	1    14100 13800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13800 13800 13950 13800
+Text Label 14550 13800 2    50   ~ 0
+VBUS
+Text Label 14550 13900 2    50   ~ 0
+ISNS
+Text Label 12650 13400 0    50   ~ 0
+Vaux
+Text Label 12650 13700 0    50   ~ 0
+CC2
+Text Label 14550 13500 2    50   ~ 0
+GDNS
+Text Label 14550 13600 2    50   ~ 0
+GDNG
+Wire Wire Line
+	13800 13500 14550 13500
+Wire Wire Line
+	13800 13600 14550 13600
+Wire Wire Line
+	14250 13800 14550 13800
+Wire Wire Line
+	13800 13900 14550 13900
+Wire Wire Line
+	13800 12700 14150 12700
+Wire Wire Line
+	13800 12800 14150 12800
+$Comp
+L power:GND #PWR0111
+U 1 1 5AE5C878
+P 13850 13300
+F 0 "#PWR0111" H 13850 13050 50  0001 C CNN
+F 1 "GND" V 13855 13172 50  0000 R CNN
+F 2 "" H 13850 13300 50  0001 C CNN
+F 3 "" H 13850 13300 50  0001 C CNN
+	1    13850 13300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13800 13300 13850 13300
+$Comp
+L Device:R R37
+U 1 1 5AE5C887
+P 14000 12900
+F 0 "R37" V 13950 12750 50  0000 C CNN
+F 1 "100k" V 13950 13150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13930 12900 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28773/crcwce3.pdf" H 14000 12900 50  0001 C CNN
+F 4 "ERJ-3EKF1003V" H 5400 8150 50  0001 C CNN "Alternative"
+F 5 "RES 100 kOhms ±1% 0.1W Chip Resistor 0603 " H 5400 8150 50  0001 C CNN "Description"
+F 6 "none" H 5400 8150 50  0001 C CNN "Feed"
+F 7 "CRCW0603100KFKEA" H 5400 8150 50  0001 C CNN "MPN"
+F 8 "Vishay-Dale" H 5400 8150 50  0001 C CNN "Manufacturer"
+F 9 "541-3950-2-ND" H 5400 8150 50  0001 C CNN "Digikey"
+F 10 "2122619" H 5400 8150 50  0001 C CNN "Farnell"
+F 11 "71-CRCW0603-100K-E3" H 5400 8150 50  0001 C CNN "Mouser"
+	1    14000 12900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13850 12900 13800 12900
+Wire Wire Line
+	14150 12900 14450 12900
+$Comp
+L power:GND #PWR0112
+U 1 1 5AE5C890
+P 14450 12900
+F 0 "#PWR0112" H 14450 12650 50  0001 C CNN
+F 1 "GND" V 14455 12772 50  0000 R CNN
+F 2 "" H 14450 12900 50  0001 C CNN
+F 3 "" H 14450 12900 50  0001 C CNN
+	1    14450 12900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R38
+U 1 1 5AE5C89E
+P 14000 13100
+F 0 "R38" V 13950 12950 50  0000 C CNN
+F 1 "75k" V 13950 13300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13930 13100 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 14000 13100 50  0001 C CNN
+F 4 "ERJ-3EKF7502V" H 5400 8150 50  0001 C CNN "Alternative"
+F 5 "RES 75 kOhms ±1% 0.1W Chip Resistor 0603" H 5400 8150 50  0001 C CNN "Description"
+F 6 "none" H 5400 8150 50  0001 C CNN "Feed"
+F 7 "CRCW060375K0FKEA	" H 5400 8150 50  0001 C CNN "MPN"
+F 8 "Vishay-Dale" H 5400 8150 50  0001 C CNN "Manufacturer"
+F 9 "541-75.0KHTR-ND" H 5400 8150 50  0001 C CNN "Digikey"
+F 10 "2138485" H 5400 8150 50  0001 C CNN "Farnell"
+F 11 "71-CRCW0603-75K-E3" H 5400 8150 50  0001 C CNN "Mouser"
+	1    14000 13100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R41
+U 1 1 5AE5C8AD
+P 14500 13100
+F 0 "R41" V 14400 13000 50  0000 C CNN
+F 1 "0R" V 14400 13200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14430 13100 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 14500 13100 50  0001 C CNN
+F 4 "ERJ-3GEY0R00V" H 5400 8150 50  0001 C CNN "Alternative"
+F 5 "RES 0 Ohms Jumper 0.1W Chip Resistor 0603 " H 5400 8150 50  0001 C CNN "Description"
+F 6 "none" H 5400 8150 50  0001 C CNN "Feed"
+F 7 "CRCW06030000Z0EA" H 5400 8150 50  0001 C CNN "MPN"
+F 8 "Vishay-Dale" H 5400 8150 50  0001 C CNN "Manufacturer"
+F 9 "541-0.0GTR-ND" H 5400 8150 50  0001 C CNN "Digikey"
+F 10 "1469739" H 5400 8150 50  0001 C CNN "Farnell"
+F 11 "71-CRCW0603-0-E3" H 5400 8150 50  0001 C CNN "Mouser"
+	1    14500 13100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13800 13100 13850 13100
+Wire Wire Line
+	14150 13100 14350 13100
+Wire Wire Line
+	14650 13100 14800 13100
+Text Label 14800 13100 2    50   ~ 0
+CTL
+$Comp
+L custom-lib:UCC24612 U1
+U 1 1 5AE5C8C0
+P 2000 13800
+F 0 "U1" H 2050 13850 50  0000 C CNN
+F 1 "UCC24612" H 2200 13350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1950 13750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/ucc24612" H 2050 13850 50  0001 C CNN
+F 4 "Switching Controllers High-Frequency Multi-Mode Synchronous Rectifier Controller 5-SOT-23 -40 to 125" H -1050 11100 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 2250 14050 50  0001 C CNN "Manufacturer"
+F 6 "UCC24612-1DBVR" H 2150 13950 50  0001 C CNN "MPN"
+F 7 "595-UCC24612-1DBVR" H 2450 14250 50  0001 C CNN "Mouser"
+F 8 "none" H -1050 11100 50  0001 C CNN "Farnell"
+F 9 "UCC24612-1DBVR-ND" H 2350 14150 50  0001 C CNN "Digikey"
+F 10 "none" H 2650 14450 50  0001 C CNN "Alternative"
+F 11 "none" H 2750 14550 50  0001 C CNN "Feed"
+	1    2000 13800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5AE5C8CF
+P 1450 14200
+F 0 "C2" H 1500 14300 50  0000 L CNN
+F 1 "2.2uF" H 1500 14100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1488 14050 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf" H 1450 14200 50  0001 C CNN
+F 4 "08055C225KAT2A-ND" H -1050 11100 50  0001 C CNN "Alternative"
+F 5 "CAP 2.2µF ±10% 50V Ceramic Capacitor X7R 0805 " H -1050 11100 50  0001 C CNN "Description"
+F 6 "C2012X7R1H225K125AC" H -1050 11100 50  0001 C CNN "MPN"
+F 7 "TDK" H -1050 11100 50  0001 C CNN "Manufacturer"
+F 8 "445-5968-1-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 9 "2522083" H -1050 11100 50  0001 C CNN "Farnell"
+F 10 "none" H -1050 11100 50  0001 C CNN "Feed"
+F 11 "810-C2012X7R1H225K" H -1050 11100 50  0001 C CNN "Mouser"
+	1    1450 14200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5AE5C8DE
+P 950 14200
+F 0 "C1" H 1000 14300 50  0000 L CNN
+F 1 "2.2uF" H 1000 14100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 988 14050 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf" H 950 14200 50  0001 C CNN
+F 4 "08055C225KAT2A-ND" H -1050 11100 50  0001 C CNN "Alternative"
+F 5 "CAP 2.2µF ±10% 50V Ceramic Capacitor X7R 0805 " H -1050 11100 50  0001 C CNN "Description"
+F 6 "C2012X7R1H225K125AC" H -1050 11100 50  0001 C CNN "MPN"
+F 7 "TDK" H -1050 11100 50  0001 C CNN "Manufacturer"
+F 8 "445-5968-1-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 9 "2522083" H -1050 11100 50  0001 C CNN "Farnell"
+F 10 "none" H -1050 11100 50  0001 C CNN "Feed"
+F 11 "810-C2012X7R1H225K" H -1050 11100 50  0001 C CNN "Mouser"
+	1    950  14200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  14050 950  13900
+Wire Wire Line
+	950  13900 1900 13900
+Wire Wire Line
+	1450 14050 1450 14000
+Wire Wire Line
+	1450 14000 1900 14000
+$Comp
+L power:GND #PWR0113
+U 1 1 5AE5C8E9
+P 1200 14450
+F 0 "#PWR0113" H 1200 14200 50  0001 C CNN
+F 1 "GND" H 1205 14277 50  0000 C CNN
+F 2 "" H 1200 14450 50  0001 C CNN
+F 3 "" H 1200 14450 50  0001 C CNN
+	1    1200 14450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  14350 950  14400
+Wire Wire Line
+	950  14400 1200 14400
+Wire Wire Line
+	1450 14400 1450 14350
+Wire Wire Line
+	1200 14450 1200 14400
+Connection ~ 1200 14400
+Wire Wire Line
+	1200 14400 1450 14400
+$Comp
+L Device:R R1
+U 1 1 5AE5C90F
+P 2850 13600
+F 0 "R1" H 2920 13646 50  0000 L CNN
+F 1 "100R" H 2920 13555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2780 13600 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 2850 13600 50  0001 C CNN
+F 4 "ERJ-3EKF1000V" H -1050 11100 50  0001 C CNN "Alternative"
+F 5 "RES 100 Ohms ±1% 0.1W Chip Resistor 0603 " H -1050 11100 50  0001 C CNN "Description"
+F 6 "none" H -1050 11100 50  0001 C CNN "Feed"
+F 7 "CRCW0603100RFKEA" H -1050 11100 50  0001 C CNN "MPN"
+F 8 "Vishay-Dale" H -1050 11100 50  0001 C CNN "Manufacturer"
+F 9 "541-3951-2-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "1469752" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "71-CRCW0603-100-E3" H -1050 11100 50  0001 C CNN "Mouser"
+	1    2850 13600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 13900 2850 13900
+Wire Wire Line
+	2850 13900 2850 13750
+Wire Wire Line
+	2850 13450 2850 13250
+Wire Wire Line
+	2850 13250 3050 13250
+Wire Wire Line
+	3250 13550 3250 14000
+Wire Wire Line
+	3250 14000 2700 14000
+$Comp
+L Device:R R2
+U 1 1 5AE5C924
+P 2900 12950
+F 0 "R2" V 2750 12850 50  0000 C CNN
+F 1 "22R" V 2750 13100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2830 12950 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 2900 12950 50  0001 C CNN
+F 4 "Vishay-Dale" V 2900 12950 50  0001 C CNN "Manufacturer"
+F 5 "CRCW120622R0JNEA" V 2900 12950 50  0001 C CNN "MPN"
+F 6 "RES 22 Ohms ±5% 0.25W Chip Resistor 1206 " V 2900 12950 50  0001 C CNN "Description"
+F 7 "none" V 2900 12950 50  0001 C CNN "Feed"
+F 8 "541-22ETR-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 9 "2413503" H -1050 11100 50  0001 C CNN "Farnell"
+F 10 "71-CRCW1206J-22-E3" H -1050 11100 50  0001 C CNN "Mouser"
+F 11 "ERJ-8ENF22R0V" H 200 11800 50  0001 C CNN "Alternative"
+	1    2900 12950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5AE5C933
+P 3400 12950
+F 0 "C3" V 3250 12800 50  0000 C CNN
+F 1 "220pF/250V" V 3250 13150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3438 12800 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 3400 12950 50  0001 C CNN
+F 4 "C1608C0G2E221J080AA" V 3400 12950 50  0001 C CNN "MPN"
+F 5 "TDK" V 3400 12950 50  0001 C CNN "Manufacturer"
+F 6 "CAP 220pF ±5% 250V Ceramic Capacitor C0G, NP0 0603" V 3400 12950 50  0001 C CNN "Description"
+F 7 "C0603C221JAGAC7867" V 3400 12950 50  0001 C CNN "Alternative"
+F 8 "none" V 3400 12950 50  0001 C CNN "Feed"
+F 9 "445-2316-2-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "none" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "810-C1608C0G2E221J" H -1050 11100 50  0001 C CNN "Mouser"
+	1    3400 12950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 12950 3250 12950
+Wire Wire Line
+	2750 12950 2650 12950
+Wire Wire Line
+	2650 12950 2650 13250
+Wire Wire Line
+	2650 13250 2850 13250
+Connection ~ 2850 13250
+Wire Wire Line
+	3550 12950 3650 12950
+Wire Wire Line
+	3650 12950 3650 13250
+Wire Wire Line
+	3650 13250 3450 13250
+Wire Wire Line
+	2650 13250 2250 13250
+Connection ~ 2650 13250
+$Comp
+L Device:C C4
+U 1 1 5AE5C94D
+P 3850 13000
+F 0 "C4" H 3850 13100 50  0000 L CNN
+F 1 "33uF" H 3850 12900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3888 12850 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf" H 3850 13000 50  0001 C CNN
+F 4 "C3216X5R1E336M160AC" H 3850 13000 50  0001 C CNN "MPN"
+F 5 "TDK" H 3850 13000 50  0001 C CNN "Manufacturer"
+F 6 "CAP 33µF ±20% 25V Ceramic Capacitor X5R 1206 " H 3850 13000 50  0001 C CNN "Description"
+F 7 "C3216JB1E336M160AC" H 3850 13000 50  0001 C CNN "Alternative"
+F 8 "none" H 3850 13000 50  0001 C CNN "Feed"
+F 9 "445-8046-2-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "2525171" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "810-C3216X5R1E336M" H -1050 11100 50  0001 C CNN "Mouser"
+	1    3850 13000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 13250 3850 13250
+Wire Wire Line
+	3850 13250 3850 13150
+Connection ~ 3650 13250
+Wire Wire Line
+	3850 13250 4250 13250
+Wire Wire Line
+	4250 13250 4250 13150
+Connection ~ 3850 13250
+Wire Wire Line
+	3850 12850 3850 12650
+Wire Wire Line
+	3850 12650 2250 12650
+Wire Wire Line
+	4250 12650 4250 12850
+Connection ~ 3850 12650
+$Comp
+L Device:L_Core_Iron L2
+U 1 1 5AE5C966
+P 4500 12650
+F 0 "L2" V 4600 12750 50  0000 C CNN
+F 1 "1uH" V 4600 12500 50  0000 C CNN
+F 2 "custom-footprint:WURTH_7447462010" H 4500 12650 50  0001 C CNN
+F 3 "http://katalog.we-online.de/pbs/datasheet/7447462010.pdf" H 4500 12650 50  0001 C CNN
+F 4 "Wurth Elektronik" V 4500 12650 50  0001 C CNN "Manufacturer"
+F 5 "Inductor Unshielded Drum Core Ferrite 1μH 8A 0.006ohm TH" V 4500 12650 50  0001 C CNN "Description"
+F 6 "7447462010" V 4500 12650 50  0001 C CNN "MPN"
+F 7 "none" V 4500 12650 50  0001 C CNN "Alternative"
+F 8 "none" V 4500 12650 50  0001 C CNN "Feed"
+F 9 "732-2565-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "1848262" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "710-7447462010" H -1050 11100 50  0001 C CNN "Mouser"
+	1    4500 12650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Iron L1
+U 1 1 5AE5C975
+P 4100 12450
+F 0 "L1" V 4200 12550 50  0000 C CNN
+F 1 "0.68uH" V 4200 12250 50  0000 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric" H 4100 12450 50  0001 C CNN
+F 3 "https://abracon.com/Magnetics/chips/AIML-1206.pdf" H 4100 12450 50  0001 C CNN
+F 4 "Abracon" V 4100 12450 50  0001 C CNN "Manufacturer"
+F 5 "680nH Shielded Multilayer Inductor 150mA 650mOhm 1206" V 4100 12450 50  0001 C CNN "Description"
+F 6 "AIML-1206-R68K-T" V 4100 12450 50  0001 C CNN "MPN"
+F 7 "none" V 4100 12450 50  0001 C CNN "Alternative"
+F 8 "none" V 4100 12450 50  0001 C CNN "Feed"
+F 9 "535-11689-2-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "none" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "815-AIML-1206-R68KT" H -1050 11100 50  0001 C CNN "Mouser"
+	1    4100 12450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4250 12650
+Wire Wire Line
+	4250 12650 4350 12650
+Wire Wire Line
+	3850 12650 4250 12650
+$Comp
+L Device:C C6
+U 1 1 5AE5C987
+P 4750 13000
+F 0 "C6" H 4750 13100 50  0000 L CNN
+F 1 "10uF" H 4750 12900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4788 12850 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL31B106KBHNNNE.jsp" H 4750 13000 50  0001 C CNN
+F 4 "CL31B106KBHNNNE" H 4750 13000 50  0001 C CNN "MPN"
+F 5 "Samsung" H 4750 13000 50  0001 C CNN "Manufacturer"
+F 6 "CAP 10µF ±10% 50V Ceramic Capacitor X7R 1206 " H 4750 13000 50  0001 C CNN "Description"
+F 7 "C3216X7R1V106M160AC" H 4750 13000 50  0001 C CNN "Alternative"
+F 8 "none" H 4750 13000 50  0001 C CNN "Feed"
+F 9 "1276-6767-2-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "none" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "none" H -1050 11100 50  0001 C CNN "Mouser"
+	1    4750 13000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 13250 4750 13150
+Wire Wire Line
+	4750 12650 4750 12850
+Wire Wire Line
+	4650 12650 4750 12650
+Wire Wire Line
+	4250 13250 4750 13250
+Connection ~ 4250 13250
+Wire Wire Line
+	5200 13250 5200 13150
+Wire Wire Line
+	5200 12650 5200 12850
+Wire Wire Line
+	4750 12650 5200 12650
+Connection ~ 4750 12650
+Wire Wire Line
+	4750 13250 5200 13250
+Connection ~ 4750 13250
+$Comp
+L Device:CP C8
+U 1 1 5AE5C9A1
+P 5600 13000
+F 0 "C8" H 5600 13100 50  0000 L CNN
+F 1 "270uF" H 5600 12900 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 5638 12850 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/AAB8000/AAB8000C265.pdf" H 5600 13000 50  0001 C CNN
+F 4 "25SEK270M" H 5600 13000 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 5600 13000 50  0001 C CNN "Manufacturer"
+F 6 "CAP 270µF ±20% 25V Aluminum Polymer Capacitor Radial Lead" H 5600 13000 50  0001 C CNN "Description"
+F 7 "none" H 5600 13000 50  0001 C CNN "Feed"
+F 8 "P122624-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 9 "none" H -1050 11100 50  0001 C CNN "Farnell"
+F 10 "667-25SEK270M" H -1050 11100 50  0001 C CNN "Mouser"
+F 11 "none" H 200 11800 50  0001 C CNN "Alternative"
+	1    5600 13000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 12650 5600 12650
+Wire Wire Line
+	5600 12650 5600 12850
+Connection ~ 5200 12650
+Wire Wire Line
+	5200 13250 5600 13250
+Wire Wire Line
+	5600 13250 5600 13150
+Connection ~ 5200 13250
+Wire Wire Line
+	6050 12650 6050 12850
+Wire Wire Line
+	6050 13250 6050 13150
+Wire Wire Line
+	6500 12650 6500 12850
+Wire Wire Line
+	6500 13250 6500 13150
+Wire Wire Line
+	5600 12650 6050 12650
+Connection ~ 5600 12650
+Wire Wire Line
+	6050 12650 6500 12650
+Connection ~ 6050 12650
+Wire Wire Line
+	5600 13250 6050 13250
+Connection ~ 5600 13250
+Wire Wire Line
+	6050 13250 6500 13250
+Connection ~ 6050 13250
+$Comp
+L power:GND #PWR0114
+U 1 1 5AE5C9BA
+P 6500 13350
+F 0 "#PWR0114" H 6500 13100 50  0001 C CNN
+F 1 "GND" H 6505 13177 50  0000 C CNN
+F 2 "" H 6500 13350 50  0001 C CNN
+F 3 "" H 6500 13350 50  0001 C CNN
+	1    6500 13350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 13250 6500 13350
+Connection ~ 6500 13250
+Wire Wire Line
+	3850 12650 3850 12450
+Wire Wire Line
+	3850 12450 3950 12450
+Wire Wire Line
+	4250 12450 4750 12450
+Wire Wire Line
+	4750 12450 4750 12650
+$Comp
+L Device:R R9
+U 1 1 5AE5C9DE
+P 7050 13200
+F 0 "R9" H 7100 13250 50  0000 L CNN
+F 1 "10R" H 7100 13150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6980 13200 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28773/crcwce3.pdf" H 7050 13200 50  0001 C CNN
+F 4 "ERJ-3EKF10R0V" H -1050 11100 50  0001 C CNN "Alternative"
+F 5 "RES 10 Ohms ±1% 0.1W Chip Resistor 0603 " H -1050 11100 50  0001 C CNN "Description"
+F 6 "none" H -1050 11100 50  0001 C CNN "Feed"
+F 7 "CRCW060310R0FKEA" H -1050 11100 50  0001 C CNN "MPN"
+F 8 "Vishay-Dale" H -1050 11100 50  0001 C CNN "Manufacturer"
+F 9 "541-3952-2-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "1469751" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "71-CRCW060310R0FKEAC" H -1050 11100 50  0001 C CNN "Mouser"
+	1    7050 13200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 12950 7050 13050
+Wire Wire Line
+	7050 13350 7050 13450
+Wire Wire Line
+	6850 12650 6500 12650
+Connection ~ 6500 12650
+Wire Wire Line
+	7250 12650 7350 12650
+Wire Wire Line
+	7350 12650 7350 13250
+Wire Wire Line
+	7350 13250 7650 13250
+Wire Wire Line
+	7050 13450 7650 13450
+Text Label 7650 13250 2    50   ~ 0
+GDNS
+Text Label 7650 13450 2    50   ~ 0
+GDNG
+$Comp
+L Device:R R10
+U 1 1 5AE5C9F7
+P 7050 13800
+F 0 "R10" H 7100 13850 50  0000 L CNN
+F 1 "1k" H 7100 13750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6980 13800 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28773/crcwce3.pdf" H 7050 13800 50  0001 C CNN
+F 4 "ERJ-3EKF1001V" H -1050 11100 50  0001 C CNN "Alternative"
+F 5 "RES 1 kOhms ±1% 0.1W Chip Resistor 0603 " H -1050 11100 50  0001 C CNN "Description"
+F 6 "none" H -1050 11100 50  0001 C CNN "Feed"
+F 7 "CRCW06031K00FKEA" H -1050 11100 50  0001 C CNN "MPN"
+F 8 "Vishay-Dale" H -1050 11100 50  0001 C CNN "Manufacturer"
+F 9 "541-3949-2-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "2122366" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "71-CRCW0603-1.0K-E3" H -1050 11100 50  0001 C CNN "Mouser"
+	1    7050 13800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5AE5CA06
+P 7050 14200
+F 0 "C11" H 7050 14300 50  0000 L CNN
+F 1 "0.01uF" H 7050 14100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7088 14050 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 7050 14200 50  0001 C CNN
+F 4 "GCM188R71H103KA37D" H -1050 11100 50  0001 C CNN "Alternative"
+F 5 " CAP 0.01µF ±10% 50V Ceramic Capacitor X7R 0603 " H -1050 11100 50  0001 C CNN "Description"
+F 6 "none" H -1050 11100 50  0001 C CNN "Feed"
+F 7 "GRM188R71H103KA01D" H -1050 11100 50  0001 C CNN "MPN"
+F 8 "Murata" H -1050 11100 50  0001 C CNN "Manufacturer"
+F 9 "490-1512-2-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "2462748" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "81-GRM39X103K50D" H -1050 11100 50  0001 C CNN "Mouser"
+	1    7050 14200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 13450 7050 13650
+Connection ~ 7050 13450
+Wire Wire Line
+	7050 14050 7050 13950
+$Comp
+L power:GND #PWR0115
+U 1 1 5AE5CA10
+P 7050 14450
+F 0 "#PWR0115" H 7050 14200 50  0001 C CNN
+F 1 "GND" H 7055 14277 50  0000 C CNN
+F 2 "" H 7050 14450 50  0001 C CNN
+F 3 "" H 7050 14450 50  0001 C CNN
+	1    7050 14450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 14350 7050 14450
+$Comp
+L Device:R R12
+U 1 1 5AE5CA1F
+P 7700 12900
+F 0 "R12" H 7630 12854 50  0000 R CNN
+F 1 "24.9R" H 7630 12945 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7630 12900 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" H 7700 12900 50  0001 C CNN
+F 4 "ERJ-3EKF24R9V" H -1050 11100 50  0001 C CNN "Alternative"
+F 5 "RES 24.9 Ohms ±1% 0.1W Chip Resistor 0603 " H -1050 11100 50  0001 C CNN "Description"
+F 6 "none" H -1050 11100 50  0001 C CNN "Feed"
+F 7 "RC0603FR-0724R9L" H -1050 11100 50  0001 C CNN "MPN"
+F 8 "Yageo America" H -1050 11100 50  0001 C CNN "Manufacturer"
+F 9 "311-24.9HRTR-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "2413690" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "603-RC0603FR-0724R9L" H -1050 11100 50  0001 C CNN "Mouser"
+	1    7700 12900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5AE5CA2E
+P 7950 12650
+F 0 "R14" V 7850 12550 50  0000 C CNN
+F 1 "0.005R" V 7850 12850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 7880 12650 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/30100/wsl.pdf" H 7950 12650 50  0001 C CNN
+F 4 "ERJ-MP2KF5M0U" H -1050 11100 50  0001 C CNN "Alternative"
+F 5 "RES 5 mOhms ±1% 0.25W Chip Resistor 1206 " H -1050 11100 50  0001 C CNN "Description"
+F 6 "none" H -1050 11100 50  0001 C CNN "Feed"
+F 7 "WSL12065L000FEA" H -1050 11100 50  0001 C CNN "MPN"
+F 8 "Vishay-Dale" H -1050 11100 50  0001 C CNN "Manufacturer"
+F 9 "WSLC-.005TR-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "1862009" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "71-WSL12065L000FEA" H -1050 11100 50  0001 C CNN "Mouser"
+	1    7950 12650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7350 12650 7700 12650
+Connection ~ 7350 12650
+Wire Wire Line
+	7700 12750 7700 12650
+Connection ~ 7700 12650
+Wire Wire Line
+	7700 12650 7800 12650
+Wire Wire Line
+	7700 13050 8200 13050
+Wire Wire Line
+	8100 12650 8200 12650
+$Comp
+L Device:C C15
+U 1 1 5AE5CA44
+P 8200 12850
+F 0 "C15" H 8250 12950 50  0000 L CNN
+F 1 "0.33uF" H 8250 12750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8238 12700 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf" H 8200 12850 50  0001 C CNN
+F 4 "none" H -1050 11100 50  0001 C CNN "Alternative"
+F 5 "CAP 0.33µF ±10% 50V Ceramic Capacitor X7R 0603 " H -1050 11100 50  0001 C CNN "Description"
+F 6 "none" H -1050 11100 50  0001 C CNN "Feed"
+F 7 "C1608X7R1H334K080AC" H -1050 11100 50  0001 C CNN "MPN"
+F 8 "TDK" H -1050 11100 50  0001 C CNN "Manufacturer"
+F 9 "445-5950-2-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "2346907" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "810-C1608X7R1H334K" H -1050 11100 50  0001 C CNN "Mouser"
+	1    8200 12850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 13000 8200 13050
+Wire Wire Line
+	8200 12700 8200 12650
+$Comp
+L Device:D_Schottky D4
+U 1 1 5AE5CA55
+P 8750 12850
+F 0 "D4" V 8650 12950 50  0000 L CNN
+F 1 "B340A-13-F" V 8850 12900 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA" H 8750 12850 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30891.pdf" H 8750 12850 50  0001 C CNN
+F 4 "CMSH3-40MA TR13" H -1050 11100 50  0001 C CNN "Alternative"
+F 5 "Diode Schottky 40V 3A SMA" H -1050 11100 50  0001 C CNN "Description"
+F 6 "none" H -1050 11100 50  0001 C CNN "Feed"
+F 7 "B340A-13-F " H -1050 11100 50  0001 C CNN "MPN"
+F 8 "Diodes Incorporated" H -1050 11100 50  0001 C CNN "Manufacturer"
+F 9 "B340A-FDITR-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "1843668" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "621-B340A-F" H -1050 11100 50  0001 C CNN "Mouser"
+	1    8750 12850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 12650 8750 12650
+Wire Wire Line
+	8750 12650 8750 12700
+Connection ~ 8200 12650
+$Comp
+L power:GND #PWR0116
+U 1 1 5AE5CA5F
+P 8750 13300
+F 0 "#PWR0116" H 8750 13050 50  0001 C CNN
+F 1 "GND" H 8755 13127 50  0000 C CNN
+F 2 "" H 8750 13300 50  0001 C CNN
+F 3 "" H 8750 13300 50  0001 C CNN
+	1    8750 13300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 13000 8750 13050
+$Comp
+L Device:C C18
+U 1 1 5AE5CA6E
+P 9400 12850
+F 0 "C18" H 9450 12950 50  0000 L CNN
+F 1 "6.8uF" H 9450 12750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9438 12700 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf" H 9400 12850 50  0001 C CNN
+F 4 "none" H -1050 11100 50  0001 C CNN "Alternative"
+F 5 "none" H -1050 11100 50  0001 C CNN "Feed"
+F 6 "CAP 6.8µF ±10% 25V Ceramic Capacitor X5R 0805 " H -1050 11100 50  0001 C CNN "Description"
+F 7 "C2012X5R1E685K125AC" H -1050 11100 50  0001 C CNN "MPN"
+F 8 "TDK" H -1050 11100 50  0001 C CNN "Manufacturer"
+F 9 "445-5982-2-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "2526259" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "810-C2012X5R1E685K" H -1050 11100 50  0001 C CNN "Mouser"
+	1    9400 12850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 12650 9400 12650
+Wire Wire Line
+	9400 12650 9400 12700
+Connection ~ 8750 12650
+Wire Wire Line
+	8750 13050 9400 13050
+Wire Wire Line
+	9400 13050 9400 13000
+Connection ~ 8750 13050
+Wire Wire Line
+	8750 13050 8750 13300
+Wire Wire Line
+	9400 12650 9650 12650
+Connection ~ 9400 12650
+Text Label 9650 12650 2    50   ~ 0
+VBUS
+$Comp
+L Connector:USB_C_Receptacle J3
+U 1 1 5AE5CA87
+P 17150 13350
+F 0 "J3" H 16721 13291 50  0000 R CNN
+F 1 "USB_C_Receptacle" H 16721 13200 50  0000 R CNN
+F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401548E4-2A" H 17300 13350 50  0001 C CNN
+F 3 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/12401548E4%232A.pdf" H 17300 13350 50  0001 C CNN
+F 4 "1054500101" H 6100 8700 50  0001 C CNN "Alternative"
+F 5 "Connector Receptacle USB Type C R/A" H 6100 8700 50  0001 C CNN "Description"
+F 6 "none" H 6100 8700 50  0001 C CNN "Feed"
+F 7 "12401548E4#2A" H 6100 8700 50  0001 C CNN "MPN"
+F 8 "Amphenol" H 6100 8700 50  0001 C CNN "Manufacturer"
+F 9 "12401548E4#2ATR-ND" H 6100 8700 50  0001 C CNN "Digikey"
+F 10 "2564554" H 6100 8700 50  0001 C CNN "Farnell"
+F 11 "523-12401548E4#2A" H 6100 8700 50  0001 C CNN "Mouser"
+	1    17150 13350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D_TVS_ALT D6
+U 1 1 5AE5CA96
+P 10250 14650
+F 0 "D6" V 10204 14729 50  0000 L CNN
+F 1 "TPD1E05U06QDPYRQ" V 10295 14729 50  0000 L CNN
+F 2 "custom-lib:X1SON2" H 10250 14650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd1e05u06-q1.pdf" H 10250 14650 50  0001 C CNN
+F 4 "Automotive 1-Channel Ultra-Low-Capacitance IEC ESD Protection Diode DPY0002A (X1SON-2)" H 6400 9250 50  0001 C CNN "Description"
+F 5 "Texas Instrument" H 6400 9250 50  0001 C CNN "Manufacturer"
+F 6 "TPD1E05U06QDPYRQ1" H 6400 9250 50  0001 C CNN "MPN"
+F 7 "595-PD1E05U06QDPYRQ1" H 6400 9250 50  0001 C CNN "Mouser"
+F 8 "none" H 6400 9250 50  0001 C CNN "Farnell"
+F 9 "296-47863-2-ND" H 6400 9250 50  0001 C CNN "Digikey"
+F 10 "none" H 6400 9250 50  0001 C CNN "Alternative"
+F 11 "none" H 6400 9250 50  0001 C CNN "Feed"
+	1    10250 14650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10250 14500 10250 14250
+Wire Wire Line
+	10250 14250 9950 14250
+$Comp
+L power:GND #PWR0117
+U 1 1 5AE5CA9F
+P 10250 14950
+F 0 "#PWR0117" H 10250 14700 50  0001 C CNN
+F 1 "GND" H 10255 14777 50  0000 C CNN
+F 2 "" H 10250 14950 50  0001 C CNN
+F 3 "" H 10250 14950 50  0001 C CNN
+	1    10250 14950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 14800 10250 14950
+Text Label 9950 14250 0    50   ~ 0
+CC2
+Wire Wire Line
+	16550 12050 16450 12050
+Wire Wire Line
+	16450 12050 16450 12150
+Wire Wire Line
+	16450 12350 16550 12350
+Wire Wire Line
+	16550 12150 16450 12150
+Connection ~ 16450 12150
+Wire Wire Line
+	16450 12150 16450 12250
+Wire Wire Line
+	16550 12250 16450 12250
+Connection ~ 16450 12250
+Wire Wire Line
+	16450 12250 16450 12350
+Wire Wire Line
+	16450 12050 16300 12050
+Connection ~ 16450 12050
+Text Label 16300 12050 0    50   ~ 0
+VBUS
+$Comp
+L power:GND #PWR0118
+U 1 1 5AE5CAB5
+P 17250 15050
+F 0 "#PWR0118" H 17250 14800 50  0001 C CNN
+F 1 "GND" H 17255 14877 50  0000 C CNN
+F 2 "" H 17250 15050 50  0001 C CNN
+F 3 "" H 17250 15050 50  0001 C CNN
+	1    17250 15050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17050 14950 17050 15000
+Wire Wire Line
+	17050 15000 17150 15000
+Wire Wire Line
+	17450 15000 17450 14950
+Wire Wire Line
+	17150 14950 17150 15000
+Connection ~ 17150 15000
+Wire Wire Line
+	17150 15000 17250 15000
+Wire Wire Line
+	17250 14950 17250 15000
+Connection ~ 17250 15000
+Wire Wire Line
+	17250 15000 17350 15000
+Wire Wire Line
+	17350 14950 17350 15000
+Connection ~ 17350 15000
+Wire Wire Line
+	17350 15000 17450 15000
+Wire Wire Line
+	17250 15050 17250 15000
+$Comp
+L Device:C C45
+U 1 1 5AE5CAD0
+P 16050 12650
+F 0 "C45" V 16100 12450 50  0000 L CNN
+F 1 "560pF" V 16100 12700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 16088 12500 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 16050 12650 50  0001 C CNN
+F 4 "C0603C561K1RAC7867" H 6100 8700 50  0001 C CNN "Alternative"
+F 5 "CAP 560pF ±10% 100V Ceramic Capacitor X7R 0603" H 6100 8700 50  0001 C CNN "Description"
+F 6 "none" H 6100 8700 50  0001 C CNN "Feed"
+F 7 "GRM188R72A561KA01D" H 6100 8700 50  0001 C CNN "MPN"
+F 8 "Murata" H 6100 8700 50  0001 C CNN "Manufacturer"
+F 9 "490-1468-2-ND" H 6100 8700 50  0001 C CNN "Digikey"
+F 10 "none" H 6100 8700 50  0001 C CNN "Farnell"
+F 11 "81-GRM188R72A561KA1D" H 6100 8700 50  0001 C CNN "Mouser"
+	1    16050 12650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	16200 12650 16550 12650
+Text Label 16300 12650 0    50   ~ 0
+CC2
+$Comp
+L power:GND #PWR0119
+U 1 1 5AE5CAD9
+P 15800 12650
+F 0 "#PWR0119" H 15800 12400 50  0001 C CNN
+F 1 "GND" V 15805 12522 50  0000 R CNN
+F 2 "" H 15800 12650 50  0001 C CNN
+F 3 "" H 15800 12650 50  0001 C CNN
+	1    15800 12650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15800 12650 15900 12650
+$Comp
+L Device:C C5
+U 1 1 5AE5CAEA
+P 4250 13000
+F 0 "C5" H 4250 13100 50  0000 L CNN
+F 1 "33uF" H 4250 12900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4288 12850 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf" H 4250 13000 50  0001 C CNN
+F 4 "C3216X5R1E336M160AC" H 4250 13000 50  0001 C CNN "MPN"
+F 5 "TDK" H 4250 13000 50  0001 C CNN "Manufacturer"
+F 6 "CAP 33µF ±20% 25V Ceramic Capacitor X5R 1206 " H 4250 13000 50  0001 C CNN "Description"
+F 7 "C3216JB1E336M160AC" H 4250 13000 50  0001 C CNN "Alternative"
+F 8 "none" H 4250 13000 50  0001 C CNN "Feed"
+F 9 "445-8046-2-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "2525171" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "810-C3216X5R1E336M" H -1050 11100 50  0001 C CNN "Mouser"
+	1    4250 13000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5AE5CAF9
+P 5200 13000
+F 0 "C7" H 5200 13100 50  0000 L CNN
+F 1 "10uF" H 5200 12900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5238 12850 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL31B106KBHNNNE.jsp" H 5200 13000 50  0001 C CNN
+F 4 "CL31B106KBHNNNE" H 5200 13000 50  0001 C CNN "MPN"
+F 5 "Samsung" H 5200 13000 50  0001 C CNN "Manufacturer"
+F 6 "CAP 10µF ±10% 50V Ceramic Capacitor X7R 1206 " H 5200 13000 50  0001 C CNN "Description"
+F 7 "C3216X7R1V106M160AC" H 5200 13000 50  0001 C CNN "Alternative"
+F 8 "none" H 5200 13000 50  0001 C CNN "Feed"
+F 9 "1276-6767-2-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "none" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "none" H -1050 11100 50  0001 C CNN "Mouser"
+	1    5200 13000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C9
+U 1 1 5AE5CB08
+P 6050 13000
+F 0 "C9" H 6050 13100 50  0000 L CNN
+F 1 "270uF" H 6050 12900 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 6088 12850 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/AAB8000/AAB8000C265.pdf" H 6050 13000 50  0001 C CNN
+F 4 "25SEK270M" H 6050 13000 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 6050 13000 50  0001 C CNN "Manufacturer"
+F 6 "CAP 270µF ±20% 25V Aluminum Polymer Capacitor Radial Lead" H 6050 13000 50  0001 C CNN "Description"
+F 7 "none" H 6050 13000 50  0001 C CNN "Alternative"
+F 8 "none" H 6050 13000 50  0001 C CNN "Feed"
+F 9 "P122624-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "none" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "667-25SEK270M" H -1050 11100 50  0001 C CNN "Mouser"
+	1    6050 13000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C10
+U 1 1 5AE5CB17
+P 6500 13000
+F 0 "C10" H 6500 13100 50  0000 L CNN
+F 1 "270uF" H 6500 12900 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 6538 12850 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/AAB8000/AAB8000C265.pdf" H 6500 13000 50  0001 C CNN
+F 4 "25SEK270M" H 6500 13000 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 6500 13000 50  0001 C CNN "Manufacturer"
+F 6 "CAP 270µF ±20% 25V Aluminum Polymer Capacitor Radial Lead" H 6500 13000 50  0001 C CNN "Description"
+F 7 "none" H 6500 13000 50  0001 C CNN "Alternative"
+F 8 "none" H 6500 13000 50  0001 C CNN "Feed"
+F 9 "P122624-ND" H -1050 11100 50  0001 C CNN "Digikey"
+F 10 "none" H -1050 11100 50  0001 C CNN "Farnell"
+F 11 "667-25SEK270M" H -1050 11100 50  0001 C CNN "Mouser"
+	1    6500 13000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 14100 3650 14100
+Wire Wire Line
+	8200 13050 8200 13250
+Wire Wire Line
+	8200 13250 7900 13250
+Connection ~ 8200 13050
+Text Label 7900 13250 0    50   ~ 0
+ISNS
+Text Label 12600 12900 0    50   ~ 0
+Vaux
+$Comp
+L power:GND #PWR0120
+U 1 1 5AE5CB25
+P 11250 12800
+F 0 "#PWR0120" H 11250 12550 50  0001 C CNN
+F 1 "GND" H 11255 12627 50  0000 C CNN
+F 2 "" H 11250 12800 50  0001 C CNN
+F 3 "" H 11250 12800 50  0001 C CNN
+	1    11250 12800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11300 12800 11250 12800
+Connection ~ 11300 12800
+Wire Wire Line
+	850  13900 950  13900
+Connection ~ 950  13900
+Text HLabel 2250 12650 0    50   Input ~ 0
+S
+Text HLabel 2250 13250 0    50   Input ~ 0
+F
+Text HLabel 850  13900 0    50   Input ~ 0
+Vo
+Text Label 950  13900 0    50   ~ 0
+Vo
+Text Label 6500 12650 0    50   ~ 0
+Vo
+Text Label 12600 13100 0    50   ~ 0
+Vo
+Text GLabel 14800 13100 2    50   Input ~ 0
+CTL
+$Comp
+L Device:Q_NMOS_SGD Q1
+U 1 1 5AFE7C2B
+P 3250 13350
+F 0 "Q1" V 3500 13350 50  0000 C CNN
+F 1 "BSC093N15NS5ATMA" V 3250 12850 50  0000 C CNN
+F 2 "Package_SON:VSONP-8-1EP_5x6_P1.27mm" H 3450 13450 50  0001 C CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-BSC093N15NS5-DS-v02_00-EN.pdf?fileId=5546d462503812bb01507033a3fa1175" H 3250 13350 50  0001 C CNN
+F 4 "BSC110N15NS5ATMA1" H -1850 11200 50  0001 C CNN "Alternative"
+F 5 "MOSFET N-CH 150V 87A PG-TDSON-8" H -1850 11200 50  0001 C CNN "Description"
+F 6 "BSC093N15NS5ATMA1TR-ND" H -1850 11200 50  0001 C CNN "Digikey"
+F 7 "2725814" H -1850 11200 50  0001 C CNN "Farnell"
+F 8 "none" H -1850 11200 50  0001 C CNN "Feed"
+F 9 "BSC093N15NS5ATMA1	" H -1850 11200 50  0001 C CNN "MPN"
+F 10 "Infineon Technologies" H -1850 11200 50  0001 C CNN "Manufacturer"
+F 11 "726-BSC093N15NS5ATMA" H -1850 11200 50  0001 C CNN "Mouser"
+	1    3250 13350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_NMOS_SGD Q3
+U 1 1 5AFE969D
+P 7050 12750
+F 0 "Q3" V 7393 12750 50  0000 C CNN
+F 1 "CSD17578Q3" V 7302 12750 50  0000 C CNN
+F 2 "custom-footprint:VSONP-8-1EP_3.3x3.3_P0.65mm" H 7250 12850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/csd17578q3a.pdf" H 7050 12750 50  0001 C CNN
+F 4 "none" H 700 10500 50  0001 C CNN "Alternative"
+F 5 "MOSFET N-CH 30V 14A DNH0008A (VSONP-8)" H 700 10500 50  0001 C CNN "Description"
+F 6 "296-39997-2-ND" H 700 10500 50  0001 C CNN "Digikey"
+F 7 "none" H 700 10500 50  0001 C CNN "Farnell"
+F 8 "none" H 700 10500 50  0001 C CNN "Feed"
+F 9 "CSD17578Q3A" H 700 10500 50  0001 C CNN "MPN"
+F 10 "Texas Instruments" H 700 10500 50  0001 C CNN "Manufacturer"
+F 11 "595-CSD17578Q3A" H 700 10500 50  0001 C CNN "Mouser"
+	1    7050 12750
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 16550 12550
+NoConn ~ 16550 13150
+NoConn ~ 16550 12950
+NoConn ~ 16550 13350
+NoConn ~ 16550 13650
+NoConn ~ 16550 13750
+NoConn ~ 16550 13950
+NoConn ~ 16550 14050
+NoConn ~ 16550 14350
+NoConn ~ 16550 14550
+NoConn ~ 16550 14250
+NoConn ~ 16550 14650
+NoConn ~ 16550 13450
+$Comp
+L power:PWR_FLAG #FLG0111
+U 1 1 5B30CF3A
+P 12850 12700
+F 0 "#FLG0111" H 12850 12775 50  0001 C CNN
+F 1 "PWR_FLAG" H 12850 12874 50  0000 C CNN
+F 2 "" H 12850 12700 50  0001 C CNN
+F 3 "~" H 12850 12700 50  0001 C CNN
+	1    12850 12700
+	1    0    0    -1  
+$EndComp
+Connection ~ 12850 12700
+Wire Wire Line
+	12850 12700 12600 12700
+$Comp
+L power:PWR_FLAG #FLG0112
+U 1 1 5B31317E
+P 950 13900
+F 0 "#FLG0112" H 950 13975 50  0001 C CNN
+F 1 "PWR_FLAG" H 950 14074 50  0000 C CNN
+F 2 "" H 950 13900 50  0001 C CNN
+F 3 "~" H 950 13900 50  0001 C CNN
+	1    950  13900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 13000 13600
+NoConn ~ 16550 12850
+NoConn ~ 16550 13050
+Wire Wire Line
+	3650 13250 3650 14100
+$EndSCHEMATC
