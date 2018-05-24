@@ -27,7 +27,8 @@ This is the 2 layer PCB designed.
 
 ![][flyback_conv_pcb]
 
-[flyback_conv_pcb]: https://github.com/fabriziotappero/flyback-conv/blob/master/IMG
+[flyback_conv_pcb]: https://github.com/fabriziotappero/flyback-conv/blob/master/IMG/flyback_conv_pcb.jpg ""
+
 All major developments into high-desity AC/DC flyback converters are done around fancy GaN Mosfets that are 
 not so readly available. For instance, the Texas Intruments TIDA-01622 schematic is built around the Navitas 
 Semiconductor NV6117 and the NV6115.
