@@ -20,14 +20,14 @@ In this repository you can find an open-source KiCad implementation of a very si
 ## Electronic Schematic
 ![][flyback_conv_sch]
 
-[flyback_conv_sch]: https://github.com/fabriziotappero/flyback-conv/blob/master/IMG/flyback_conv_sch.jpg ""
+[flyback_conv_sch]: https://github.com/fabriziotappero/flyback-conv/blob/master/IMG/flyback_conv_sch.jpeg ""
 
 ## Printed Circuit Board
 This is the 2 layer PCB designed.
 
 ![][flyback_conv_pcb]
 
-[flyback_conv_pcb]: https://github.com/fabriziotappero/flyback-conv/blob/master/IMG/flyback_conv_pcb.jpg ""
+[flyback_conv_pcb]: https://github.com/fabriziotappero/flyback-conv/blob/master/IMG/flyback_conv_pcb.jpeg ""
 
 All major developments into high-desity AC/DC flyback converters are done around fancy GaN Mosfets that are 
 not so readly available. For instance, the Texas Intruments TIDA-01622 schematic is built around the Navitas 
@@ -41,7 +41,7 @@ The datasheet of all mentioned components are available in the /PDF folder.
 ## BOM
 ![][flyback_conv_bom]
 
-[flyback_conv_bom]: https://github.com/fabriziotappero/flyback-conv/blob/master/IMG/flyback_conv_bom.jpg ""
+[flyback_conv_bom]: https://github.com/fabriziotappero/flyback-conv/blob/master/IMG/flyback_conv_bom.jpeg ""
 
 ## References
 
